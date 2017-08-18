@@ -95,8 +95,48 @@
 				</div>
 				<div class="benefits-items">
 					<div class="benefits-item">
-						<div class="benefits-item__img-no"><img src="" alt=""></div>
-						<div class="benefits-item__img-yes"><img src="" alt=""></div>
+						<div class="benefits-item__img-no"><img src="img/ben-no-1.jpg" alt=""></div>
+						<div class="benefits-item__img-yes"><img src="img/ben-yes-1.jpg" alt=""></div>
+						<div class="benefits-item__descr">
+							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
+							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+						</div>
+					</div>
+					<div class="benefits-item">
+						<div class="benefits-item__img-no"><img src="img/ben-no-2.jpg" alt=""></div>
+						<div class="benefits-item__img-yes"><img src="img/ben-yes-2.jpg" alt=""></div>
+						<div class="benefits-item__descr">
+							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
+							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+						</div>
+					</div>
+					<div class="benefits-item">
+						<div class="benefits-item__img-no"><img src="img/ben-no-3.jpg" alt=""></div>
+						<div class="benefits-item__img-yes"><img src="img/ben-yes-3.jpg" alt=""></div>
+						<div class="benefits-item__descr">
+							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
+							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+						</div>
+					</div>
+					<div class="benefits-item">
+						<div class="benefits-item__img-no"><img src="img/ben-no-4.jpg" alt=""></div>
+						<div class="benefits-item__img-yes"><img src="img/ben-yes-4.jpg" alt=""></div>
+						<div class="benefits-item__descr">
+							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
+							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+						</div>
+					</div>
+					<div class="benefits-item">
+						<div class="benefits-item__img-no"><img src="img/ben-no-5.jpg" alt=""></div>
+						<div class="benefits-item__img-yes"><img src="img/ben-yes-5.jpg" alt=""></div>
+						<div class="benefits-item__descr">
+							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
+							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+						</div>
+					</div>
+					<div class="benefits-item">
+						<div class="benefits-item__img-no"><img src="img/ben-no-6.jpg" alt=""></div>
+						<div class="benefits-item__img-yes"><img src="img/ben-yes-6.jpg" alt=""></div>
 						<div class="benefits-item__descr">
 							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
 							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>

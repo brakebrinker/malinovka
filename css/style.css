@@ -173,3 +173,49 @@ button.slick-next.slick-arrow {
     background: url(../img/next-arrow.png) no-repeat 0 0;
     right: -55px;
 }
+
+/* benefits */
+section.benefits {
+    background: url(../img/benefits-bg.jpg) no-repeat 0 0px;
+}
+.benefits-title {
+    color: #363636;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+}
+hr {
+    background-color: #fbb040;
+    width: 111px;
+    height: 8px;
+    border: none;
+    margin: 16px auto;
+}
+.benefits-description {
+    text-align: center;
+}
+.benefits-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefits-item {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.benefits-item > div {
+    margin-right: 20px;
+}
+.benefits-item__descr-title {
+    color: #303030;
+    font-size: 21px;
+    font-weight: 500;
+}
+.benefits-item__descr-text {
+    color: #303030;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+}
