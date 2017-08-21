@@ -5,6 +5,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Russo+One&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Малиновка</title>
@@ -39,7 +40,7 @@
 						</div>
 						<div class="header-container__info">
 							<div class="header-container__info-phone"><a href="tel:834353456478">8 (3435) 345 64 78</a></div>
-							<div class="header-container__info-callback"><a href="#">Написать нам</a></div>
+							<div class="header-container__info-callback"><a href="#write-form" class="open-popup-link">Написать нам</a></div>
 						</div>
 					</div>
 					<div class="slider-container">
@@ -71,8 +72,7 @@
 
 										if(in_array($ext,$allowed_types))
 										{
-											echo '<div class = "slider-self__item">
-												<img src="'.$directory.'/'.$file.'" alt="'.$file.'" />
+											echo '<div class = "slider-self__item"><a href="#"><img src="'.$directory.'/'.$file.'" alt="'.$file.'" /></a>
 											</div>';
 											$i++;
 										}
@@ -106,49 +106,655 @@
 						<div class="benefits-item__img-no"><img src="img/ben-no-2.jpg" alt=""></div>
 						<div class="benefits-item__img-yes"><img src="img/ben-yes-2.jpg" alt=""></div>
 						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
-							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+							<div class="benefits-item__descr-title">Пищевая
+						нержавеющая
+						сталь</div>
+							<div class="benefits-item__descr-text">Гипоаллергенна, не взаимодействует с жидкостью внутри куба.</div>
 						</div>
 					</div>
 					<div class="benefits-item">
 						<div class="benefits-item__img-no"><img src="img/ben-no-3.jpg" alt=""></div>
 						<div class="benefits-item__img-yes"><img src="img/ben-yes-3.jpg" alt=""></div>
 						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
-							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+							<div class="benefits-item__descr-title">Гарантия на все оборудование
+					2 года</div>
+							<div class="benefits-item__descr-text">Документы приходят вместе с апппаратом.</div>
 						</div>
 					</div>
 					<div class="benefits-item">
 						<div class="benefits-item__img-no"><img src="img/ben-no-4.jpg" alt=""></div>
 						<div class="benefits-item__img-yes"><img src="img/ben-yes-4.jpg" alt=""></div>
 						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
-							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+							<div class="benefits-item__descr-title">Надженость и
+					безопасность</div>
+							<div class="benefits-item__descr-text">Соотвествует ГОСТам, подтверждено всеми необходимыми сертификатами соответствия.</div>
 						</div>
 					</div>
 					<div class="benefits-item">
 						<div class="benefits-item__img-no"><img src="img/ben-no-5.jpg" alt=""></div>
 						<div class="benefits-item__img-yes"><img src="img/ben-yes-5.jpg" alt=""></div>
 						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
-							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+							<div class="benefits-item__descr-title">Оплата при
+					получении. </div>
+							<div class="benefits-item__descr-text">Производится наличными курьеру или в пунктах выдачи.</div>
 						</div>
 					</div>
 					<div class="benefits-item">
 						<div class="benefits-item__img-no"><img src="img/ben-no-6.jpg" alt=""></div>
 						<div class="benefits-item__img-yes"><img src="img/ben-yes-6.jpg" alt=""></div>
 						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
-							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
+							<div class="benefits-item__descr-title">Позволяет готовить любые напитки</div>
+							<div class="benefits-item__descr-text">Соотвествует ГОСТам, подтверждено всеми необходимыми сертификатами соответствия.</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="choice">
+			<div class="section-container">
+				<div class="choice-left"><img src="img/drink-lf.png" alt=""></div>
+				<div class="choice-center">
+					<div class="choice-title">выбeрeте какой аппарат<br>подойдет именно вам</div>
+					<div class="choice-subtitle">ответье на несколько вопросов</div>
+					<div class="choice-action"><a href="#podbor-form" class="open-popup-link">подобрать самогонный аппарат</a></div>
+				</div>
+				<div class="choice-right"><img src="img/drink-rt.png" alt=""></div>
+			</div>
+		</section>
+		<section class="preparation-stage">
+			<div class="section-container">
+				<div class="preparation-stage-title">
+					стадии приготовления самогона<br>в домашних условиях
+				</div>
+				<hr>
+				<div class="preparation-stage-container">
+					<div class="preparation-stage__img"><img src="img/stages.png" alt=""></div>
+					<div class="preparation-stage__items">
+						<div class="preparation-stage__item">
+							<div class="preparation-stage__item-title">Выбор и подготовка исходного сырья.
+							</div>
+							<div class="preparation-stage__item-text">
+							Варианты: крахмал, рис, сахар, гречиха, пшеница, овес, рожь, пшено, горох, ячмень и др. Выбранное сырье во многом определяет качество готового продукта.
+							</div>
+							<div class="preparation-stage__item-link"><a href="#podbor-form-syrja" class="open-popup-link">узнать больше о сырье</a></div>
+						</div>
+						<div class="preparation-stage__item">
+							<div class="preparation-stage__item-title">Брожение.
+							</div>
+							<div class="preparation-stage__item-text">
+							Спиртовое брожение – это процесс преобразования дрожжами сахара в этиловый спирт и углекислый газ. Готовность браги зависит от сырья и температуры, среднее время 
+							от 3 до 14 дней.
+							</div>
+							<div class="preparation-stage__item-link"><a href="#brozhenie-form" class="open-popup-link">узнать больше о сырье</a></div>
+						</div>
+						<div class="preparation-stage__item">
+							<div class="preparation-stage__item-title">Перегонка и очистка самогона.
+							</div>
+							<div class="preparation-stage__item-text">
+							Мутный самогон с "дурным" запахом и вкусом - результат небрежного отношения к технологическим требованиям, предъявляемым на всех без исключения этапах приготовления. Портят вкус и запах самогона содержащиеся в нем ядовитые сивушные масла, являющиеся нервно-паралитическими ядами.
+							</div>
+							<div class="preparation-stage__item-link"><a href="#peregonka-form" class="open-popup-link">узнать подробнее</a></div>
+						</div>
+						<div class="preparation-stage__item">
+							<div class="preparation-stage__item-title">«Облагораживание» самогона и наслаждение готовым напитком.
+							</div>
+							<div class="preparation-stage__item-text">
+							т.е. придание самогону определенных вкусовых, ароматических и цветовых качеств
+							</div>
+							<div class="preparation-stage__item-link"><a href="#preparation-form" class="open-popup-link">получить консультацию</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="products-tabs">
+			<div class="section-container">
+				<ul class="tabs">
+					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
+					<li class="tab-link" data-tab="tab-2"><span>«Малиновка»
+	щукина</span></li>
+					<li class="tab-link" data-tab="tab-3"><span>«Малиновка»
+	щукина PRO</span></li>
+					<li class="tab-link" data-tab="tab-4"><span>«Малиновка»
+	Бутлегер</span></li>
+					<li class="tab-link" data-tab="tab-5"><span>«Малиновка»
+	муншайн</span></li>
+				</ul>
+			</div>
+			<div class="products-tabs__items">
+				<div class="section-container">
+					<div id="tab-1" class="tab-content current products-tabs__item">
+						<div class="products-tabs__item-left">
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» капитан</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-form">
+								<form action="#">
+									<span class="label">Объем</span>
+									<div class="form-choice">
+										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
+										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<span class="price">11900р</span>
+										<input type="hidden" name="price" value="11900р">
+									</div>
+									<div class="form-buttons">
+										<a href="#">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="open-popup-link"><input type="submit" value="Купить"></a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="products-tabs__item-center">
+							<img src="img/product-1.png" alt="Малиновка капитан">
+						</div>
+						<div class="products-tabs__item-right">
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВСТРОЕННЫЙ ПОПУГАЙ
+								</div>
+								<div class="products-tabs__option-text">
+									для своевременного отбора голов и хвостов
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									2 РЕЖИМА РАБОТЫ
+								</div>
+								<div class="products-tabs__option-text">
+									«Самогонный аппарат» и «Спиртовой»
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
+								</div>
+								<div class="products-tabs__option-text">
+									очистка от сивушных масел на 100%
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									УСИЛЕННЫЙ БАК
+								</div>
+								<div class="products-tabs__option-text">
+									толщина стенок 1,5мм, дно толщиной 2мм
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									РАБОТАЕТ НА ИНДУКЦИИ
+								</div>
+								<div class="products-tabs__option-text">
+									подходит для всех типов плит
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-2" class="tab-content products-tabs__item">
+						<div class="products-tabs__item-left">
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» щукина</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-form">
+								<form action="#">
+									<span class="label">Объем</span>
+									<div class="form-choice">
+										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
+										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<span class="price">11900р</span>
+										<input type="hidden" name="price" value="11900р">
+									</div>
+									<div class="form-buttons">
+										<a href="#">Подробнее</a>
+										<input type="submit" value="Купить">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="products-tabs__item-center">
+							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+						</div>
+						<div class="products-tabs__item-right">
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВСТРОЕННЫЙ ПОПУГАЙ
+								</div>
+								<div class="products-tabs__option-text">
+									для своевременного отбора голов и хвостов
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									2 РЕЖИМА РАБОТЫ
+								</div>
+								<div class="products-tabs__option-text">
+									«Самогонный аппарат» и «Спиртовой»
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
+								</div>
+								<div class="products-tabs__option-text">
+									очистка от сивушных масел на 100%
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									УСИЛЕННЫЙ БАК
+								</div>
+								<div class="products-tabs__option-text">
+									толщина стенок 1,5мм, дно толщиной 2мм
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									РАБОТАЕТ НА ИНДУКЦИИ
+								</div>
+								<div class="products-tabs__option-text">
+									подходит для всех типов плит
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-3" class="tab-content products-tabs__item">
+						<div class="products-tabs__item-left">
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» щукина PRO</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-form">
+								<form action="#">
+									<span class="label">Объем</span>
+									<div class="form-choice">
+										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
+										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<span class="price">11900р</span>
+										<input type="hidden" name="price" value="11900р">
+									</div>
+									<div class="form-buttons">
+										<a href="#">Подробнее</a>
+										<input type="submit" value="Купить">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="products-tabs__item-center">
+							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+						</div>
+						<div class="products-tabs__item-right">
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВСТРОЕННЫЙ ПОПУГАЙ
+								</div>
+								<div class="products-tabs__option-text">
+									для своевременного отбора голов и хвостов
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									2 РЕЖИМА РАБОТЫ
+								</div>
+								<div class="products-tabs__option-text">
+									«Самогонный аппарат» и «Спиртовой»
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
+								</div>
+								<div class="products-tabs__option-text">
+									очистка от сивушных масел на 100%
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									УСИЛЕННЫЙ БАК
+								</div>
+								<div class="products-tabs__option-text">
+									толщина стенок 1,5мм, дно толщиной 2мм
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									РАБОТАЕТ НА ИНДУКЦИИ
+								</div>
+								<div class="products-tabs__option-text">
+									подходит для всех типов плит
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-4" class="tab-content products-tabs__item">
+						<div class="products-tabs__item-left">
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» Бутлегер</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-form">
+								<form action="#">
+									<span class="label">Объем</span>
+									<div class="form-choice">
+										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
+										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<span class="price">11900р</span>
+										<input type="hidden" name="price" value="11900р">
+									</div>
+									<div class="form-buttons">
+										<a href="#">Подробнее</a>
+										<input type="submit" value="Купить">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="products-tabs__item-center">
+							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+						</div>
+						<div class="products-tabs__item-right">
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВСТРОЕННЫЙ ПОПУГАЙ
+								</div>
+								<div class="products-tabs__option-text">
+									для своевременного отбора голов и хвостов
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									2 РЕЖИМА РАБОТЫ
+								</div>
+								<div class="products-tabs__option-text">
+									«Самогонный аппарат» и «Спиртовой»
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
+								</div>
+								<div class="products-tabs__option-text">
+									очистка от сивушных масел на 100%
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									УСИЛЕННЫЙ БАК
+								</div>
+								<div class="products-tabs__option-text">
+									толщина стенок 1,5мм, дно толщиной 2мм
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									РАБОТАЕТ НА ИНДУКЦИИ
+								</div>
+								<div class="products-tabs__option-text">
+									подходит для всех типов плит
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-5" class="tab-content products-tabs__item">
+						<div class="products-tabs__item-left">
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» муншайн</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-form">
+								<form action="#">
+									<span class="label">Объем</span>
+									<div class="form-choice">
+										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
+										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<span class="price">11900р</span>
+										<input type="hidden" name="price" value="11900р">
+									</div>
+									<div class="form-buttons">
+										<a href="#">Подробнее</a>
+										<input type="submit" value="Купить">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="products-tabs__item-center">
+							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+						</div>
+						<div class="products-tabs__item-right">
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВСТРОЕННЫЙ ПОПУГАЙ
+								</div>
+								<div class="products-tabs__option-text">
+									для своевременного отбора голов и хвостов
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									2 РЕЖИМА РАБОТЫ
+								</div>
+								<div class="products-tabs__option-text">
+									«Самогонный аппарат» и «Спиртовой»
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
+								</div>
+								<div class="products-tabs__option-text">
+									очистка от сивушных масел на 100%
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									УСИЛЕННЫЙ БАК
+								</div>
+								<div class="products-tabs__option-text">
+									толщина стенок 1,5мм, дно толщиной 2мм
+								</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">
+									РАБОТАЕТ НА ИНДУКЦИИ
+								</div>
+								<div class="products-tabs__option-text">
+									подходит для всех типов плит
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="unpacking">
+			<div class="section-container">
+				<div class="unpacking-title">
+					распаковка самогонных<br>апаратов малиновка
+				</div>
+				<div class="unpacking-video-items">
+					<div class="unpacking-video-item">
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="unpacking-video-item">
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="unpacking-video-item">
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="unpacking-video-item">
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="delivery">
+			<div class="section-container">
+				<div class="delivery-title">
+					бесплатная ДОСТАВКА ПО РОССИИ<br>с оплатой при получении
+				</div>
+				<div class="delivery-subtitle">
+					при заказе свышее <span>5000 рублей</span>
+				</div>
+				<div class="delivery-benefits">
+					<div class="delivery-benefits__item">
+						Оперативная <span>доставка<br>от 1-3 дней</span>
+					</div>
+					<div class="delivery-benefits__item">
+						<span>Гарантия</span> качества<br>2 года
+					</div>
+					<div class="delivery-benefits__item">
+						Возврат товара<br><span>в течение 30 дней</span>
+					</div>
+					<div class="delivery-benefits__item">
+						Возможность оплаты<br>картой <span>VISA, MasterCard</span>
+					</div>
+				</div>
+				<div class="delivery-ways-container">
+					<div class="delivery-ways__left">
+						<div class="delivery-ways__left-title">
+							Способы доставки:
+						</div>
+						<div class="delivery-ways__left-post-rf">
+							<img src="img/post-rf.png" alt="">
+						</div>
+						<div class="delivery-ways__left-item-text">
+							Наложенным платежом!
+						</div>
+						<div class="delivery-ways__left-item-link">
+							курьерскими службами
+						</div>
+						<div class="delivery-ways__left-item-link">
+							транспортными компаниями
+						</div>
+					</div>
+					<div class="delivery-ways__right">
+						<div class="delivery-ways__right-title">
+							Оплата:
+						</div>
+						<div class="delivery-ways__right-text">
+							Производится: наличными курьеру или в пунктах<br>выдачи - при получении заказа.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="consultation">
+			<div class="section-container">
+				<div class="consultation-title">
+					Закажите бесплатную консультацию
+				</div>
+				<div class="consultation-form__container">
+					<form action="">
+						<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+						<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+						<input type="submit" value="Заказать консультацию">
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<section class="footer">
+				<div class="section-container">
+					<div class="footer-container">
+						<div class="footer-container__logo">
+							<a href="#">
+								<div class="footer-container__logo-img">
+									<img src="img/logo.png" alt="Логотип">
+								</div>
+								<div class="footer-container__logo-descr">
+									<div class="site-name">Самогонные<br>аппараты «Малиновка»</div>
+								</div>
+							</a>
+						</div>
+						<div class="footer-container__info">
+							<div class="footer-container__info-phone"><a href="tel:834353456478">8 (3435) 345 64 78</a></div>
+							<div class="footer-container__info-callback"><a href="#write-form" class="open-popup-link">Написать нам</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="menu-section">
+				<nav class="section-container">
+					<ul>
+						<li><a href="#">Преимущества</a></li>
+						<li><a href="#">Каталог товаров</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Инструкция новичкам</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</section>
+		</footer>
+	</div>
+	<div id="write-form" class="white-popup">
+		<div class="form-container">
+			<div class="form-header">Оставьте свои контакты и мы свяжемся с вами</div>
+			<form action="">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Заказать консультацию">
+			</form>
+		</div>
+	</div>
+	<div id="podbor-form" class="white-popup">
+		<div class="form-container">
+			<div class="form-header">Мы поможем подобрать самогонный аппарат</div>
+			<form action="">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Заказать консультацию">
+			</form>
+		</div>
+	</div>
+	<div id="podbor-form-syrja" class="white-popup">
+		<div class="form-container">
+			<div class="form-header">Выбор и подготовка исходного сырья</div>
+			<form action="">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Заказать консультацию">
+			</form>
+		</div>
+	</div>
+	<div id="brozhenie-form" class="white-popup">
+		<div class="form-container">
+			<div class="form-header">Получить рецепты по брожению</div>
+			<form action="">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Заказать консультацию">
+			</form>
+		</div>
+	</div>
+	<div id="peregonka-form" class="white-popup">
+		<div class="form-container">
+			<div class="form-header">Перегонка и очистка. Получить консультацию</div>
+			<form action="">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Заказать консультацию">
+			</form>
+		</div>
+	</div>
+	<div id="preparation-form" class="white-popup">
+		<div class="form-container">
+			<div class="form-header">«Облагораживание» напитка. Получить консультацию</div>
+			<form action="">
+				<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Заказать консультацию">
+			</form>
+		</div>
+	</div>
+	<div id="product-order-form-kapitan" class="white-popup">
+		<div class="form-container">
+			<div class="form-header">«Малиновка» капитан</div>
+			<form action="">
+				<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
+				<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+				<span class="price">11900р</span>
+				<input type="text" name="name" id="name" placeholder="Ваше имя" required>
+				<input type="text" name="email" id="email" placeholder="Ваш E-mail" required>
+				<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Купить">
+			</form>
+		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" integrity="sha256-SOuLUArmo4YXtXONKz+uxIGSKneCJG4x0nVcA0pFzV0=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.slider-self').slick({
@@ -158,6 +764,27 @@
 				cssEase: 'linear'
 			});
 		});
-	  </script>
+	</script>
+	<script>
+		$(document).ready(function(){
+			
+			$('ul.tabs li').click(function(){
+				var tab_id = $(this).attr('data-tab');
+
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+
+				$(this).addClass('current');
+				$("#"+tab_id).addClass('current');
+			})
+
+		})
+	</script>
+	<script>
+		$('.open-popup-link').magnificPopup({
+	      type:'inline',
+	      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	    });
+	</script>
 </body>
 </html>
