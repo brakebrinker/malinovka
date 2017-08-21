@@ -22,6 +22,16 @@ input, a {
     max-width: 1900px;
     margin: 0 auto;
 }
+.page-wrapper.product {
+    background: #292929;
+}
+.page-wrapper.product section:not(.menu-section) {
+    width: 1125px;
+    margin: 0 auto;
+}
+.page-wrapper.product section.products-tabs {
+    margin-top: 40px;
+}
 
 /*menu*/
 section.menu-section {
@@ -149,6 +159,10 @@ section.footer {
 .footer-container__info-callback a:hover {
     background-color: rgba(251, 176, 64, 0.18);
     transition: background-color .2s;
+}
+section.header.product {
+    background: #292929;
+    padding-top: 20px;
 }
 
 /* slider */
@@ -452,7 +466,7 @@ input[type="radio"]:checked + label > span > span {
     width: 49%;
     text-align: center;
 }
-.form-buttons a {
+.form-buttons a.more {
     font-family: 'Russo One', sans-serif;
     color: #ffffff;
     font-size: 20px;
@@ -465,11 +479,11 @@ input[type="radio"]:checked + label > span > span {
     display: inline-block;
     transition: background-color .2s;
 }
-.form-buttons a:hover {
+.form-buttons a.more:hover {
     background-color: rgba(255, 255, 255, 0.08);
     transition: background-color .2s;
 }
-.form-buttons input[type="submit"] {
+.form-buttons a.buy {
     background-color: #ffc268;
     border: none;
     font-family: 'Russo One', sans-serif;
@@ -479,8 +493,10 @@ input[type="radio"]:checked + label > span > span {
     text-decoration: none;
     text-transform: uppercase;
     transition: background-color .2s;
+    display: block;
+    padding: 12px 0px;
 }
-.form-buttons input[type="submit"]:hover {
+.form-buttons a.buy:hover {
     background-color: #f3a431;
     transition: background-color .2s;
 }
@@ -728,6 +744,151 @@ form input[type="submit"]:hover {
     transition: background-color .2s;
 }
 
+/* product characteristics*/
+section.characteristics {
+    background-color: #fff;
+}
+.characteristics-title {
+    color: #393939;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    padding: 52px 0 35px 0;
+}
+.characteristics__slider-item {
+    display: flex;
+    height: 550px;
+}
+.characteristics__container .slick-initialized .slick-slide {
+    display: flex;
+}
+.characteristics__slider-item > * {
+    flex: 1;
+}
+.characteristics__slider-content {
+    padding: 169px 48px 0;
+}
+.characteristics__slider-title {
+    color: #fbb040;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+}
+.characterictics__slider-text {
+    color: #363636;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+.characterictics__slider-buttons a {
+    font-size: 20px;
+    display: block;
+    width: 318px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+}
+.characteristics__slider-img {
+    width: 562px;
+    height: 550px;
+}
+.characteristics__slider-content {
+    padding: 160px 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.characterictics__slider-buttons a.more {
+    color: #393939;
+    border: 2px solid #23130d;
+    margin-bottom: 8px;
+}
+.characterictics__slider-buttons a.buy {
+    background-color: #fbb040;
+    color: #fff;
+    padding: 12px;
+    margin-top: 8px;
+}
+
+/* certificates */
+section.certificates .section-container {
+    background-color: #393939;
+    padding: 33px 54px;
+}
+.certificates-title {
+    color: #fbb040;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+}
+.certificates-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* beverages */
+section.beverages {
+    background-color: #fff;
+}
+section.beverages .section-container {
+    padding: 55px 70px;
+}
+.beverages-title {
+    color: #393939;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+}
+.beverages-items {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.beverages-item__container {
+    border-width: 2px;
+    border-color: #f0f0f0;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 310px;
+    height: 296px;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #f0f0f0;
+}
+.beverages-item__title a {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.beverages-item__title {
+    margin-top: 30px;
+}
+.beverages-item__title a:hover {
+
+    text-decoration: none;
+}
+.beverages-item__img {
+    margin-top: 25px;
+}
+.beverages-item {
+    margin-top: 27px;
+}
+
 /* popup */
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
     width: 785px;
@@ -775,6 +936,42 @@ form input[type="submit"]:hover {
     font-size: 0;
     font-weight: 100;
     font-family: 'Roboto', Baskerville, monospace;
+}
+.choice-buy {
+    display: flex;
+    width: 314px;
+}
+.choice-buy > * {
+    margin-right: 19px;
+}
+.choice-buy input[type="radio"] + label {
+    font-size: 20px;
+}
+.form-container span.label {
+    width: 314px;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.form-container span.price {
+    font-size: 35px;
+    color: #fff;
+    line-height: 25px;
+}
+.form-container input[type="submit"] {
+width: 314px;
+}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+    color: #FFF;
+    right: 0;
+    text-align: right;
+    padding-right: 6px;
+    width: 60px;
+}
+img.mfp-img {
+    padding: 60px 0 40px;
 }
 
 

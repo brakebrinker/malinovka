@@ -1,185 +1,24 @@
-<?php require_once 'header.php'; ?>
-					<div class="slider-container">
-						<div class="slider-info">
-							<div class="slider-title">Хороший алкоголь - это просто</div>
-							<div class="slider-subtitle">Приготовь отличные напитки вместе с самогонным аппаратом «Малиновка»</div>
-							<div class="slider-items">
-								<div class="slider-item"><img src="img/sl-icon-1.png" alt=""><div class="slider-item__title">Разнообразие напитков</div></div>
-								<div class="slider-item"><img src="img/sl-icon-2.png" alt=""><div class="slider-item__title">Простой и понятный принцип работы</div></div>
-								<div class="slider-item"><img src="img/sl-icon-3.png" alt=""><div class="slider-item__title">Доставка в любой регион РФ</div></div>
-							</div>
-						</div>
-						<?php
-								$directory = "./img/slider";
-								$allowed_types=array("jpg", "png", "gif");
-								$file_parts = array();
-								$ext="";
-								$title="";
-								$i=0;
-
-								$dir_handle = @opendir($directory) or die("Ошибка при открытии папки !!!"); ?>
-						<div class="slider-self-container">
-							<div class="slider-self">
-								<?php
-									while ($file = readdir($dir_handle)) {
-										if($file=="." || $file == "..") continue;
-										$file_parts = explode(".",$file);
-										$ext = strtolower(array_pop($file_parts));
-
-										if(in_array($ext,$allowed_types))
-										{
-											echo '<div class = "slider-self__item"><a href="#"><img src="'.$directory.'/'.$file.'" alt="'.$file.'" /></a>
-											</div>';
-											$i++;
-										}
-
-									}
-									closedir($dir_handle);  //закрыть папку
-								?>
-							</div>
-						</div>
-					</div>
+<?php require_once 'header-product.php'; ?>
 				</div>
 			</section>
 		</header>
-		<section class="benefits">
-			<div class="section-container">
-				<div class="benefits-title">Самогон начинается с браги,<br> а винокур с выбора оборудования</div>
-				<hr>
-				<div class="benefits-description">
-					Выгодные отличия самогонных аппаратов «Малиновка» от других производителей
-				</div>
-				<div class="benefits-items">
-					<div class="benefits-item">
-						<div class="benefits-item__img-no"><img src="img/ben-no-1.jpg" alt=""></div>
-						<div class="benefits-item__img-yes"><img src="img/ben-yes-1.jpg" alt=""></div>
-						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Большая, удобная горловина</div>
-							<div class="benefits-item__descr-text">Легко заливать продукт и мыть бак.</div>
-						</div>
-					</div>
-					<div class="benefits-item">
-						<div class="benefits-item__img-no"><img src="img/ben-no-2.jpg" alt=""></div>
-						<div class="benefits-item__img-yes"><img src="img/ben-yes-2.jpg" alt=""></div>
-						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Пищевая
-						нержавеющая
-						сталь</div>
-							<div class="benefits-item__descr-text">Гипоаллергенна, не взаимодействует с жидкостью внутри куба.</div>
-						</div>
-					</div>
-					<div class="benefits-item">
-						<div class="benefits-item__img-no"><img src="img/ben-no-3.jpg" alt=""></div>
-						<div class="benefits-item__img-yes"><img src="img/ben-yes-3.jpg" alt=""></div>
-						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Гарантия на все оборудование
-					2 года</div>
-							<div class="benefits-item__descr-text">Документы приходят вместе с апппаратом.</div>
-						</div>
-					</div>
-					<div class="benefits-item">
-						<div class="benefits-item__img-no"><img src="img/ben-no-4.jpg" alt=""></div>
-						<div class="benefits-item__img-yes"><img src="img/ben-yes-4.jpg" alt=""></div>
-						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Надженость и
-					безопасность</div>
-							<div class="benefits-item__descr-text">Соотвествует ГОСТам, подтверждено всеми необходимыми сертификатами соответствия.</div>
-						</div>
-					</div>
-					<div class="benefits-item">
-						<div class="benefits-item__img-no"><img src="img/ben-no-5.jpg" alt=""></div>
-						<div class="benefits-item__img-yes"><img src="img/ben-yes-5.jpg" alt=""></div>
-						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Оплата при
-					получении. </div>
-							<div class="benefits-item__descr-text">Производится наличными курьеру или в пунктах выдачи.</div>
-						</div>
-					</div>
-					<div class="benefits-item">
-						<div class="benefits-item__img-no"><img src="img/ben-no-6.jpg" alt=""></div>
-						<div class="benefits-item__img-yes"><img src="img/ben-yes-6.jpg" alt=""></div>
-						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Позволяет готовить любые напитки</div>
-							<div class="benefits-item__descr-text">Соотвествует ГОСТам, подтверждено всеми необходимыми сертификатами соответствия.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="choice">
-			<div class="section-container">
-				<div class="choice-left"><img src="img/drink-lf.png" alt=""></div>
-				<div class="choice-center">
-					<div class="choice-title">выбeрeте какой аппарат<br>подойдет именно вам</div>
-					<div class="choice-subtitle">ответье на несколько вопросов</div>
-					<div class="choice-action"><a href="#podbor-form" class="open-popup-link">подобрать самогонный аппарат</a></div>
-				</div>
-				<div class="choice-right"><img src="img/drink-rt.png" alt=""></div>
-			</div>
-		</section>
-		<section class="preparation-stage">
-			<div class="section-container">
-				<div class="preparation-stage-title">
-					стадии приготовления самогона<br>в домашних условиях
-				</div>
-				<hr>
-				<div class="preparation-stage-container">
-					<div class="preparation-stage__img"><img src="img/stages.png" alt=""></div>
-					<div class="preparation-stage__items">
-						<div class="preparation-stage__item">
-							<div class="preparation-stage__item-title">Выбор и подготовка исходного сырья.
-							</div>
-							<div class="preparation-stage__item-text">
-							Варианты: крахмал, рис, сахар, гречиха, пшеница, овес, рожь, пшено, горох, ячмень и др. Выбранное сырье во многом определяет качество готового продукта.
-							</div>
-							<div class="preparation-stage__item-link"><a href="#podbor-form-syrja" class="open-popup-link">узнать больше о сырье</a></div>
-						</div>
-						<div class="preparation-stage__item">
-							<div class="preparation-stage__item-title">Брожение.
-							</div>
-							<div class="preparation-stage__item-text">
-							Спиртовое брожение – это процесс преобразования дрожжами сахара в этиловый спирт и углекислый газ. Готовность браги зависит от сырья и температуры, среднее время 
-							от 3 до 14 дней.
-							</div>
-							<div class="preparation-stage__item-link"><a href="#brozhenie-form" class="open-popup-link">узнать больше о сырье</a></div>
-						</div>
-						<div class="preparation-stage__item">
-							<div class="preparation-stage__item-title">Перегонка и очистка самогона.
-							</div>
-							<div class="preparation-stage__item-text">
-							Мутный самогон с "дурным" запахом и вкусом - результат небрежного отношения к технологическим требованиям, предъявляемым на всех без исключения этапах приготовления. Портят вкус и запах самогона содержащиеся в нем ядовитые сивушные масла, являющиеся нервно-паралитическими ядами.
-							</div>
-							<div class="preparation-stage__item-link"><a href="#peregonka-form" class="open-popup-link">узнать подробнее</a></div>
-						</div>
-						<div class="preparation-stage__item">
-							<div class="preparation-stage__item-title">«Облагораживание» самогона и наслаждение готовым напитком.
-							</div>
-							<div class="preparation-stage__item-text">
-							т.е. придание самогону определенных вкусовых, ароматических и цветовых качеств
-							</div>
-							<div class="preparation-stage__item-link"><a href="#preparation-form" class="open-popup-link">получить консультацию</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section class="products-tabs">
 			<div class="section-container">
 				<ul class="tabs">
-					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
+					<li class="tab-link" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
 					<li class="tab-link" data-tab="tab-2"><span>«Малиновка»
 	щукина</span></li>
 					<li class="tab-link" data-tab="tab-3"><span>«Малиновка»
 	щукина PRO</span></li>
 					<li class="tab-link" data-tab="tab-4"><span>«Малиновка»
 	Бутлегер</span></li>
-					<li class="tab-link" data-tab="tab-5"><span>«Малиновка»
+					<li class="tab-link current" data-tab="tab-5"><span>«Малиновка»
 	муншайн</span></li>
 				</ul>
 			</div>
 			<div class="products-tabs__items">
 				<div class="section-container">
-					<div id="tab-1" class="tab-content current products-tabs__item">
+					<div id="tab-1" class="tab-content products-tabs__item">
 						<div class="products-tabs__item-left">
 							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» капитан</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
@@ -257,14 +96,14 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="#" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-1.png" alt="Малиновка капитан">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
@@ -311,7 +150,7 @@
 					</div>
 					<div id="tab-3" class="tab-content products-tabs__item">
 						<div class="products-tabs__item-left">
-							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» щукина PRO</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» щукина pro</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
 								<form action="#">
 									<span class="label">Объем</span>
@@ -322,14 +161,14 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="#" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-1.png" alt="Малиновка капитан">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
@@ -376,7 +215,7 @@
 					</div>
 					<div id="tab-4" class="tab-content products-tabs__item">
 						<div class="products-tabs__item-left">
-							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» Бутлегер</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» бутлегер</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
 								<form action="#">
 									<span class="label">Объем</span>
@@ -387,14 +226,14 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="#" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-1.png" alt="Малиновка капитан">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
@@ -439,7 +278,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="tab-5" class="tab-content products-tabs__item">
+					<div id="tab-5" class="tab-content current products-tabs__item">
 						<div class="products-tabs__item-left">
 							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» муншайн</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
@@ -452,14 +291,14 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="#" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-1.png" alt="Малиновка капитан">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
@@ -507,23 +346,161 @@
 				</div>
 			</div>
 		</section>
-		<section class="unpacking">
+		<section class="characteristics">
 			<div class="section-container">
-				<div class="unpacking-title">
-					распаковка самогонных<br>апаратов малиновка
+				<div class="characteristics-title">
+					Все характеристики самогонного аппарата «Малиновка» Муншайн
 				</div>
-				<div class="unpacking-video-items">
-					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+				<div class="characteristics__container">
+					<div class="characteristics__slider">
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/pr-char-1.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									Встроенный попугай
+								</div>
+								<div class="characterictics__slider-text">
+									(УСТРОЙСТВО ИЗМЕРЕНИЯ КРЕПОСТИ)- это полный контроль крепости выгоняемого напитка прямо в режиме пергонки, теперь не придется мучиться и тратить время на постоянный перелив из маленькой емкости в большую.
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#" class="more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/pr-char-1.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									Сливной кран
+								</div>
+								<div class="characterictics__slider-text">
+									(УСТРОЙСТВО ИЗМЕРЕНИЯ КРЕПОСТИ)- это полный контроль крепости выгоняемого напитка прямо в режиме пергонки, теперь не придется мучиться и тратить время на постоянный перелив из маленькой емкости в большую.
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#" class="more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/pr-char-1.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									Материал
+								</div>
+								<div class="characterictics__slider-text">
+									(УСТРОЙСТВО ИЗМЕРЕНИЯ КРЕПОСТИ)- это полный контроль крепости выгоняемого напитка прямо в режиме пергонки, теперь не придется мучиться и тратить время на постоянный перелив из маленькой емкости в большую.
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#" class="more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="certificates">
+			<div class="section-container">
+				<div class="certificates-title">
+					Надежность и безопасность
+				</div>
+				<hr>
+				<div class="certificates-items">
+					<div class="certificates-item">
+						<a class="popup-img" href="img/certificate-1.jpg"><img src="img/certificate-1.jpg" alt=""></a>
 					</div>
-					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+					<div class="certificates-item">
+						<a class="popup-img" href="img/certificate-2.jpg"><img src="img/certificate-2.jpg" alt=""></a>
 					</div>
-					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+					<div class="certificates-item">
+						<a class="popup-img" href="img/certificate-3.jpg"><img src="img/certificate-3.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="beverages">
+			<div class="section-container">
+				<div class="beverages-title">
+					Виды напитков<br>которые можно приготовить
+				</div>
+				<div class="beverages-items">
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Настойка кедровая</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-1.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Настойка клюквенная</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-2.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Настойка облепиховая</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-3.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Ликёр. Брю Кюрасао</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-4.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Ликёр. Абсент</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-5.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Ликёр. Бейлис</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-6.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Водка. Чача</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-7.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Шотландский виски</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-8.jpg" alt=""></div>
+						</div>
+					</div>
+					<div class="beverages-item">
+						<div class="beverages-item__container">
+							<div class="beverages-item__title">
+								<a href="#">Персиковый бренди</a>
+							</div>
+							<div class="beverages-item__img"><img src="img/bev-9.jpg" alt=""></div>
+						</div>
 					</div>
 				</div>
 			</div>
