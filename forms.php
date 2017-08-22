@@ -1,4 +1,4 @@
-<div id="write-form" class="white-popup">
+<div id="write-form" class="white-popup mfp-hide">
 	<div class="form-container">
 		<div class="form-header">Оставьте свои контакты и мы свяжемся с вами</div>
 		<form action="">
@@ -9,7 +9,7 @@
 		</form>
 	</div>
 </div>
-<div id="podbor-form" class="white-popup">
+<div id="podbor-form" class="white-popup mfp-hide">
 	<div class="form-container">
 		<div class="form-header">Мы поможем подобрать самогонный аппарат</div>
 		<form action="">
@@ -20,7 +20,7 @@
 		</form>
 	</div>
 </div>
-<div id="podbor-form-syrja" class="white-popup">
+<div id="podbor-form-syrja" class="white-popup mfp-hide">
 	<div class="form-container">
 		<div class="form-header">Выбор и подготовка исходного сырья</div>
 		<form action="">
@@ -31,7 +31,7 @@
 		</form>
 	</div>
 </div>
-<div id="brozhenie-form" class="white-popup">
+<div id="brozhenie-form" class="white-popup mfp-hide">
 	<div class="form-container">
 		<div class="form-header">Получить рецепты по брожению</div>
 		<form action="">
@@ -42,7 +42,7 @@
 		</form>
 	</div>
 </div>
-<div id="peregonka-form" class="white-popup">
+<div id="peregonka-form" class="white-popup mfp-hide">
 	<div class="form-container">
 		<div class="form-header">Перегонка и очистка. Получить консультацию</div>
 		<form action="">
@@ -53,7 +53,7 @@
 		</form>
 	</div>
 </div>
-<div id="preparation-form" class="white-popup">
+<div id="preparation-form" class="white-popup mfp-hide">
 	<div class="form-container">
 		<div class="form-header">«Облагораживание» напитка. Получить консультацию</div>
 		<form action="">
@@ -64,7 +64,7 @@
 		</form>
 	</div>
 </div>
-<div id="product-order-form-kapitan" class="white-popup">
+<div id="product-order-form-kapitan" class="white-popup mfp-hide">
 	<div class="form-container">
 		<div class="form-header">«Малиновка» капитан</div>
 		<form action="">

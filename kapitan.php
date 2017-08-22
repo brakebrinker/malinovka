@@ -5,20 +5,16 @@
 		<section class="products-tabs">
 			<div class="section-container">
 				<ul class="tabs">
-					<li class="tab-link" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
-					<li class="tab-link" data-tab="tab-2"><span>«Малиновка»
-	щукина</span></li>
-					<li class="tab-link" data-tab="tab-3"><span>«Малиновка»
-	щукина PRO</span></li>
-					<li class="tab-link" data-tab="tab-4"><span>«Малиновка»
-	Бутлегер</span></li>
-					<li class="tab-link current" data-tab="tab-5"><span>«Малиновка»
-	муншайн</span></li>
+					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
+					<li class="tab-link" data-tab="tab-2"><span>«Малиновка» щукина</span></li>
+					<li class="tab-link" data-tab="tab-3"><span>«Малиновка» щукина PRO</span></li>
+					<li class="tab-link" data-tab="tab-4"><span>«Малиновка» Бутлегер</span></li>
+					<li class="tab-link" data-tab="tab-5"><span>«Малиновка» муншайн</span></li>
 				</ul>
 			</div>
 			<div class="products-tabs__items">
 				<div class="section-container">
-					<div id="tab-1" class="tab-content products-tabs__item">
+					<div id="tab-1" class="tab-content current products-tabs__item">
 						<div class="products-tabs__item-left">
 							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» капитан</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
@@ -31,7 +27,6 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
@@ -278,7 +273,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="tab-5" class="tab-content current products-tabs__item">
+					<div id="tab-5" class="tab-content products-tabs__item">
 						<div class="products-tabs__item-left">
 							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» муншайн</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
@@ -291,13 +286,14 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
+										<a href="#" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-5.png" alt="Малиновка муншайн">
+							<img src="img/product-2.png" alt="Малиновка капитан">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
@@ -330,7 +326,7 @@
 		<section class="characteristics">
 			<div class="section-container">
 				<div class="characteristics-title">
-					Все характеристики самогонного аппарата «Малиновка» Муншайн
+					Все характеристики самогонного аппарата «Малиновка» Капитан
 				</div>
 				<div class="characteristics__container">
 					<div class="characteristics__slider">
@@ -382,6 +378,21 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="how-work">
+			<div class="section-container">
+				<div class="how-work-title">Как работает самогонный аппарат?</div>
+				<div class="how-work-container">
+					<div class="how-wokr__img"><img src="img/how-work-img.png" alt=""></div>
+					<div class="how-work__content">
+						<div class="how-work__content-radio">
+							<input id="how-work-radio01" type="radio" name="volume" checked value="Винты дефлегматора закрыты. Дефлегматор отключен. Аппарат работает в обычном режиме."><label for="how-work-radio01"><span><span></span></span> Самогонный аппарат</label>
+							<input id="how-work-radio02" type="radio" name="volume" value="Как-то работает"><label for="how-work-radio02"><span><span></span></span> Спиртовой</label>
+						</div>
+						<div class="how-work__content-text">Винты дефлегматора закрыты. Дефлегматор отключен. Аппарат работает в обычном режиме.</div>
 					</div>
 				</div>
 			</div>
@@ -486,7 +497,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="present munshain">
+		<section class="present kapitan">
 			<div class="section-container">
 				<div class="present-title">
 					Отличный<br>подарок для<br>настоящего мужчины

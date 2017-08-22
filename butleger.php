@@ -6,14 +6,10 @@
 			<div class="section-container">
 				<ul class="tabs">
 					<li class="tab-link" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
-					<li class="tab-link" data-tab="tab-2"><span>«Малиновка»
-	щукина</span></li>
-					<li class="tab-link" data-tab="tab-3"><span>«Малиновка»
-	щукина PRO</span></li>
-					<li class="tab-link" data-tab="tab-4"><span>«Малиновка»
-	Бутлегер</span></li>
-					<li class="tab-link current" data-tab="tab-5"><span>«Малиновка»
-	муншайн</span></li>
+					<li class="tab-link" data-tab="tab-2"><span>«Малиновка» щукина</span></li>
+					<li class="tab-link" data-tab="tab-3"><span>«Малиновка» щукина PRO</span></li>
+					<li class="tab-link current" data-tab="tab-4"><span>«Малиновка» Бутлегер</span></li>
+					<li class="tab-link" data-tab="tab-5"><span>«Малиновка» муншайн</span></li>
 				</ul>
 			</div>
 			<div class="products-tabs__items">
@@ -26,7 +22,7 @@
 									<span class="label">Объем</span>
 									<div class="form-choice">
 										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
-										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 20л</label>
 										<span class="price">11900р</span>
 										<input type="hidden" name="price" value="11900р">
 									</div>
@@ -213,7 +209,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="tab-4" class="tab-content products-tabs__item">
+					<div id="tab-4" class="tab-content current products-tabs__item">
 						<div class="products-tabs__item-left">
 							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» бутлегер</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
@@ -226,59 +222,42 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-1.png" alt="Малиновка капитан">
+							<img src="img/product-4.png" alt="Малиновка капитан">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									ВСТРОЕННЫЙ ПОПУГАЙ
-								</div>
-								<div class="products-tabs__option-text">
-									для своевременного отбора голов и хвостов
-								</div>
+								<div class="products-tabs__option-title">Аппарат двойной перегонки</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									2 РЕЖИМА РАБОТЫ
-								</div>
-								<div class="products-tabs__option-text">
-									«Самогонный аппарат» и «Спиртовой»
-								</div>
+								<div class="products-tabs__option-title">Съемный второй бак</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
-								</div>
-								<div class="products-tabs__option-text">
-									очистка от сивушных масел на 100%
-								</div>
+								<div class="products-tabs__option-title">Увеличение кпд на 60%</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									УСИЛЕННЫЙ БАК
-								</div>
-								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
-								</div>
+								<div class="products-tabs__option-title">100% герметичность</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									РАБОТАЕТ НА ИНДУКЦИИ
-								</div>
-								<div class="products-tabs__option-text">
-									подходит для всех типов плит
-								</div>
+								<div class="products-tabs__option-title">Кламповое соединение</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">Температурный контроль</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">Возможность установки диоптрия (продается отдельно!)</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">Никаких ограничений на длину царги</div>
 							</div>
 						</div>
 					</div>
-					<div id="tab-5" class="tab-content current products-tabs__item">
+					<div id="tab-5" class="tab-content products-tabs__item">
 						<div class="products-tabs__item-left">
 							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» муншайн</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
@@ -291,13 +270,14 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
+										<a href="#" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-5.png" alt="Малиновка муншайн">
+							<img src="img/product-2.png" alt="Малиновка капитан">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
@@ -330,7 +310,7 @@
 		<section class="characteristics">
 			<div class="section-container">
 				<div class="characteristics-title">
-					Все характеристики самогонного аппарата «Малиновка» Муншайн
+					Все характеристики самогонного аппарата «Малиновка» Бутлегер
 				</div>
 				<div class="characteristics__container">
 					<div class="characteristics__slider">
@@ -486,7 +466,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="present munshain">
+		<section class="present butleger">
 			<div class="section-container">
 				<div class="present-title">
 					Отличный<br>подарок для<br>настоящего мужчины

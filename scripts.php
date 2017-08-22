@@ -48,3 +48,28 @@
 	    });
     });
 </script>
+
+<script>
+	jQuery(document).ready(function($) {
+		//position slider navigation
+
+		var ulWidth = $('.slick-dots').width() + 30;
+		var containerWidth = $('.characteristics__slider').width();
+
+		var leftPadding = containerWidth / 2 - ulWidth / 2;
+
+		$('.slick-dots').css("left", leftPadding);
+
+		//arrows
+		$('.characteristics__container .slick-prev').css("left", leftPadding - 25);
+		$('.characteristics__container .slick-next').css("left", leftPadding + ulWidth + 13);
+
+		//change radio on page kapitan
+		$(".how-work__content-radio input").on('change', function(){
+			if ($(this).attr('checked')) {
+				$('.how-work__content-text').html($(this).val());
+			}
+		});
+
+    });
+</script>

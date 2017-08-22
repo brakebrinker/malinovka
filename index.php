@@ -166,15 +166,11 @@
 		<section class="products-tabs">
 			<div class="section-container">
 				<ul class="tabs">
-					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
-					<li class="tab-link" data-tab="tab-2"><span>«Малиновка»
-	щукина</span></li>
-					<li class="tab-link" data-tab="tab-3"><span>«Малиновка»
-	щукина PRO</span></li>
-					<li class="tab-link" data-tab="tab-4"><span>«Малиновка»
-	Бутлегер</span></li>
-					<li class="tab-link" data-tab="tab-5"><span>«Малиновка»
-	муншайн</span></li>
+					<li class="tab-link" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
+					<li class="tab-link" data-tab="tab-2"><span>«Малиновка» щукина</span></li>
+					<li class="tab-link" data-tab="tab-3"><span>«Малиновка» щукина PRO</span></li>
+					<li class="tab-link" data-tab="tab-4"><span>«Малиновка» Бутлегер</span></li>
+					<li class="tab-link" data-tab="tab-5"><span>«Малиновка» муншайн</span></li>
 				</ul>
 			</div>
 			<div class="products-tabs__items">
