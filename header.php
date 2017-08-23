@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Russo+One&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Малиновка</title>

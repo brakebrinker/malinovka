@@ -1,3 +1,6 @@
+section:not(.delivery) {
+    display: none;
+}
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1135,7 +1138,180 @@ img.mfp-img {
 
 /*MEDIA*/
 @media (max-width: 1125px) {
-
+    .section-container {
+        width: 780px;
+        margin: 0 auto;
+    }
+    footer section.menu-section {
+        display: none;
+    }
+    .header-container__info.desktop {
+        display: none;
+    }
+    .mean-container .mean-bar,
+    .mean-container .mean-nav {
+        background: #000;
+    }
+    .mean-container .mean-bar {
+        z-index: 20;
+        min-height: 60px;
+    }
+    .mean-container .mean-nav {
+        margin-top: 60px;
+    }
+    .mean-container a.meanmenu-reveal span {
+        width: 43px;
+        height: 6px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .mean-container a.meanmenu-reveal {
+        width: 30px;
+        height: 30px;
+    }
+    .header-container__info.mobile {
+        display: flex;
+        position: absolute;
+        z-index: 21;
+        right: 18px;
+        top: 10px;
+        width: 535px;
+    }
+    section.header {
+        clear: both;
+    }
+    .header-container > div{
+        width: 500px;
+    }
+    section.header {
+        background: url(../img/header-bg.jpg) no-repeat center 1px;
+        padding-top: 20px;
+    }
+    .header.section-container {
+        width: 780px;
+        margin: 0 auto;
+        background: url(../img/slider/kapitan.png) no-repeat right 62px;
+    }
+    .slider-info {
+        width: 100%;
+    }
+    .slider-self-container {
+        display: none;
+    }
+    .slider-title {
+        padding: 1px 12px;
+    }
+    .slider-subtitle {
+        padding-left: 25px;
+    }
+    .slider-items {
+        margin-top: 37px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 520px;
+    }
+    .slider-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px;
+    }
+    .slider-item:last-child {
+        margin-left: -20px;
+        margin-top: -23px;
+    }
+    .slider-item__title {
+        max-width: 220px;
+    }
+    .benefits-items {
+        flex-direction: column;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+    .benefits-item {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px 0;
+    }
+    .benefits-item > div:last-child {
+        margin-right: 0;
+    }
+    .benefits-description {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    section.choice .section-container {
+        justify-content: flex-start;
+    }
+    .choice-left {
+        width: 240px;
+    }
+    .choice-right {
+        display: none;
+    }
+    .preparation-stage__item-text {
+        font-weight: 300;
+        padding-right: 10px;
+    }
+    .preparation-stage__item-title {
+        font-weight: 500;
+    }
+    .tab-content.current {  
+        flex-wrap: wrap;
+    }
+    .products-tabs__item-right {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .products-tabs__item-center {
+        max-width: 50%;
+    }
+    .products-tabs__item-center img {
+        width: 100%;
+    }
+    ul.tabs li[data-tab="tab-1"] span,
+    ul.tabs li[data-tab="tab-1"].current span,
+    ul.tabs li[data-tab="tab-2"] span,
+    ul.tabs li[data-tab="tab-2"].current span,
+    ul.tabs li[data-tab="tab-3"] span,
+    ul.tabs li[data-tab="tab-3"].current span,
+    ul.tabs li[data-tab="tab-4"] span,
+    ul.tabs li[data-tab="tab-4"].current span,
+    ul.tabs li[data-tab="tab-5"] span,
+    ul.tabs li[data-tab="tab-5"].current span {
+        background-size: contain;
+        background-position-x: 0;
+    }
+    ul.tabs li span {
+        display: inline-block;
+        height: 57px;
+        padding: 33px 0 0 40px;
+        font-size: 10.5px;
+    }
+    .unpacking-video-items {
+        justify-content: space-between;
+        padding: 22px 0px 31px;
+    }
+    .unpacking-video-item {
+        padding: 15px;
+    }
+    .delivery-ways-container {
+        background: none;
+    }
+    .delivery-benefits {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .delivery-benefits > div {
+        width: 50%;
+        margin-bottom: 24px;
+    }
+    .delivery-ways-container {
+        padding-top: 0px;
+    }
 }
 
 

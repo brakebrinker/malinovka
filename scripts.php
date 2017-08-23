@@ -2,6 +2,7 @@
 <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" integrity="sha256-SOuLUArmo4YXtXONKz+uxIGSKneCJG4x0nVcA0pFzV0=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.meanmenu.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.slider-self').slick({
@@ -48,7 +49,11 @@
 	    });
     });
 </script>
-
+<script>
+	jQuery(document).ready(function ($) {
+		$('header nav').meanmenu();
+	});
+</script>
 <script>
 	jQuery(document).ready(function($) {
 		//position slider navigation
