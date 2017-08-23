@@ -28,7 +28,7 @@
 				<div class="section-container">
 					<div class="header-container">
 						<div class="header-container__logo">
-							<a href="#">
+							<a href="/">
 								<div class="header-container__logo-img">
 									<img src="img/logo.png" alt="Логотип">
 								</div>

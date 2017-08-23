@@ -3,7 +3,7 @@
 			<div class="section-container">
 				<div class="footer-container">
 					<div class="footer-container__logo">
-						<a href="#">
+						<a href="/">
 							<div class="footer-container__logo-img">
 								<img src="img/logo.png" alt="Логотип">
 							</div>

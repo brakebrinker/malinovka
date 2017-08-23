@@ -85,6 +85,11 @@
 		});
 		//tab click update data
 		$('.tab-link').on('click', function() {
+			var thisRadio = $('.products-tabs__items').find('#' + $(this).attr('data-tab')).find('input[type="radio"]');
+			if (thisRadio.attr('checked')) {
+				$('.price').html(thisRadio.attr('data-price') + 'р');
+				$('input[name="price"]').val(thisRadio.attr('data-price') + 'р');
+			}
 			setDataIntoForm();
 		});
 		$('.buy').on('click', function() {
@@ -106,12 +111,6 @@
 		}
 
 		function setDataIntoForm() {
-			var thisRadio = $('.products-tabs__items.current input[type="radio"]');
-			if (thisRadio.attr('checked')) {
-				$('.price').html(thisRadio.attr('data-price') + 'р');
-				$('input[name="price"]').val(thisRadio.attr('data-price') + 'р');
-			}
-
 			$('.form-header').html($('.tab-link.current span').html());
 
 			var currentRadio = $('.products-tabs__item.current .form-choice').find('input[type="radio"]');

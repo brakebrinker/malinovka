@@ -33,6 +33,13 @@ input, a {
     margin-top: 40px;
 }
 
+.header-container__info.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
 /*menu*/
 section.menu-section {
     background-color: #000;
@@ -1123,6 +1130,12 @@ width: 314px;
 }
 img.mfp-img {
     padding: 60px 0 40px;
+}
+
+
+/*MEDIA*/
+@media (max-width: 1125px) {
+
 }
 
 

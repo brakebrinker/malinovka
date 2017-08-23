@@ -24,7 +24,7 @@
 										<input id="radio01" type="radio" name="volume" data-price="11990" value="12" checked><label for="radio01"><span><span></span></span> 12л</label>
 										<input id="radio02" type="radio" name="volume" data-price="12990" value="20"><label for="radio02"><span><span></span></span> 20л</label>
 										<span class="price">11900р</span>
-										<input type="hidden" name="price" value="">
+										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
 										<a href="/kapitan.php" class="more">Подробнее</a>
@@ -89,7 +89,7 @@
 										<input id="radio03" type="radio" name="volume" data-price="6590" value="12" checked><label for="radio03"><span><span></span></span> 12л</label>
 										<input id="radio04" type="radio" name="volume" data-price="7590" value="20"><label for="radio04"><span><span></span></span> 20л</label>
 										<span class="price">6590р</span>
-										<input type="hidden" name="price" value="">
+										<input type="hidden" name="price" value="6590р">
 									</div>
 									<div class="form-buttons">
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
@@ -211,8 +211,8 @@
 									<div class="form-choice">
 										<input id="radio07" type="radio" name="volume" data-price="9990" value="12" checked><label for="radio07"><span><span></span></span> 12л</label>
 										<input id="radio08" type="radio" name="volume" data-price="10990" value="20"><label for="radio08"><span><span></span></span> 20л</label>
-										<span class="price">11900р</span>
-										<input type="hidden" name="price" value="">
+										<span class="price">9990р</span>
+										<input type="hidden" name="price" value="9990р">
 									</div>
 									<div class="form-buttons">
 										<a href="/butleger.php" class="more">Подробнее</a>
@@ -260,8 +260,8 @@
 									<div class="form-choice">
 										<input id="radio09" type="radio" name="volume" data-price="8990" value="12" checked><label for="radio09"><span><span></span></span> 12л</label>
 										<input id="radio10" type="radio" name="volume" data-price="9990" value="20"><label for="radio10"><span><span></span></span> 20л</label>
-										<span class="price">11900р</span>
-										<input type="hidden" name="price" value="">
+										<span class="price">8990р</span>
+										<input type="hidden" name="price" value="8990р">
 									</div>
 									<div class="form-buttons">
 										<a href="/munshain.php" class="more">Подробнее</a>

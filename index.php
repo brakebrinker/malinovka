@@ -166,7 +166,7 @@
 		<section class="products-tabs">
 			<div class="section-container">
 				<ul class="tabs">
-					<li class="tab-link" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
+					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
 					<li class="tab-link" data-tab="tab-2"><span>«Малиновка» щукина</span></li>
 					<li class="tab-link" data-tab="tab-3"><span>«Малиновка» щукина PRO</span></li>
 					<li class="tab-link" data-tab="tab-4"><span>«Малиновка» Бутлегер</span></li>
@@ -182,13 +182,13 @@
 								<form action="#">
 									<span class="label">Объем</span>
 									<div class="form-choice">
-										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
-										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<input id="radio01" type="radio" name="volume" data-price="11990" value="12" checked><label for="radio01"><span><span></span></span> 12л</label>
+										<input id="radio02" type="radio" name="volume" data-price="12990" value="20"><label for="radio02"><span><span></span></span> 20л</label>
 										<span class="price">11900р</span>
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#" class="more">Подробнее</a>
+										<a href="/kapitan.php" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
@@ -247,20 +247,20 @@
 								<form action="#">
 									<span class="label">Объем</span>
 									<div class="form-choice">
-										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
-										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
-										<span class="price">11900р</span>
-										<input type="hidden" name="price" value="11900р">
+										<input id="radio03" type="radio" name="volume" data-price="6590" value="12" checked><label for="radio03"><span><span></span></span> 12л</label>
+										<input id="radio04" type="radio" name="volume" data-price="7590" value="20"><label for="radio04"><span><span></span></span> 20л</label>
+										<span class="price">6590р</span>
+										<input type="hidden" name="price" value="6590р">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="/schukina.php" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-2.png" alt="Малиновка щукина">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
@@ -307,42 +307,36 @@
 					</div>
 					<div id="tab-3" class="tab-content products-tabs__item">
 						<div class="products-tabs__item-left">
-							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» щукина PRO</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» щукина pro</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
 								<form action="#">
 									<span class="label">Объем</span>
 									<div class="form-choice">
-										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
-										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+										<input id="radio05" type="radio" name="volume" data-price="11990" value="12" checked><label for="radio05"><span><span></span></span> 12л</label>
+										<input id="radio06" type="radio" name="volume" data-price="12990" value="20"><label for="radio06"><span><span></span></span> 20л</label>
 										<span class="price">11900р</span>
-										<input type="hidden" name="price" value="11900р">
+										<input type="hidden" name="price" value="">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="/schukina-pro.php" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-3.png" alt="Малиновка щукина pro">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									ВСТРОЕННЫЙ ПОПУГАЙ
-								</div>
+								<div class="products-tabs__option-title">Сливной кран на баке</div>
 								<div class="products-tabs__option-text">
-									для своевременного отбора голов и хвостов
+									для слива браги
 								</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									2 РЕЖИМА РАБОТЫ
-								</div>
-								<div class="products-tabs__option-text">
-									«Самогонный аппарат» и «Спиртовой»
-								</div>
+								<div class="products-tabs__option-title">Надежность</div>
+								<div class="products-tabs__option-text">конструкция проверенная временем</div>
 							</div>
 							<div class="products-tabs__option">
 								<div class="products-tabs__option-title">
@@ -372,66 +366,50 @@
 					</div>
 					<div id="tab-4" class="tab-content products-tabs__item">
 						<div class="products-tabs__item-left">
-							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» Бутлегер</span> У ВАС ДОМА</div>
+							<div class="products-tabs__item-title">СОВЕРШЕННый <span>«Малиновка» бутлегер</span> У ВАС ДОМА</div>
 							<div class="products-tabs__item-form">
 								<form action="#">
 									<span class="label">Объем</span>
 									<div class="form-choice">
-										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
-										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
-										<span class="price">11900р</span>
-										<input type="hidden" name="price" value="11900р">
+										<input id="radio07" type="radio" name="volume" data-price="9990" value="12" checked><label for="radio07"><span><span></span></span> 12л</label>
+										<input id="radio08" type="radio" name="volume" data-price="10990" value="20"><label for="radio08"><span><span></span></span> 20л</label>
+										<span class="price">9990р</span>
+										<input type="hidden" name="price" value="9990р">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="/butleger.php" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-4.png" alt="Малиновка бутлегер">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									ВСТРОЕННЫЙ ПОПУГАЙ
-								</div>
-								<div class="products-tabs__option-text">
-									для своевременного отбора голов и хвостов
-								</div>
+								<div class="products-tabs__option-title">Аппарат двойной перегонки</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									2 РЕЖИМА РАБОТЫ
-								</div>
-								<div class="products-tabs__option-text">
-									«Самогонный аппарат» и «Спиртовой»
-								</div>
+								<div class="products-tabs__option-title">Съемный второй бак</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
-								</div>
-								<div class="products-tabs__option-text">
-									очистка от сивушных масел на 100%
-								</div>
+								<div class="products-tabs__option-title">Увеличение кпд на 60%</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									УСИЛЕННЫЙ БАК
-								</div>
-								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
-								</div>
+								<div class="products-tabs__option-title">100% герметичность</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									РАБОТАЕТ НА ИНДУКЦИИ
-								</div>
-								<div class="products-tabs__option-text">
-									подходит для всех типов плит
-								</div>
+								<div class="products-tabs__option-title">Кламповое соединение</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">Температурный контроль</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">Возможность установки диоптрия (продается отдельно!)</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">Никаких ограничений на длину царги</div>
 							</div>
 						</div>
 					</div>
@@ -442,61 +420,43 @@
 								<form action="#">
 									<span class="label">Объем</span>
 									<div class="form-choice">
-										<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
-										<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
-										<span class="price">11900р</span>
-										<input type="hidden" name="price" value="11900р">
+										<input id="radio09" type="radio" name="volume" data-price="8990" value="12" checked><label for="radio09"><span><span></span></span> 12л</label>
+										<input id="radio10" type="radio" name="volume" data-price="9990" value="20"><label for="radio10"><span><span></span></span> 20л</label>
+										<span class="price">8990р</span>
+										<input type="hidden" name="price" value="8990р">
 									</div>
 									<div class="form-buttons">
-										<a href="#">Подробнее</a>
-										<input type="submit" value="Купить">
+										<a href="/munshain.php" class="more">Подробнее</a>
+										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="products-tabs__item-center">
-							<img src="img/product-tab-1.png" alt="Малиновка капитан">
+							<img src="img/product-5.png" alt="Малиновка муншайн">
 						</div>
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									ВСТРОЕННЫЙ ПОПУГАЙ
-								</div>
+								<div class="products-tabs__option-title">Компактный размер</div>
+								<div class="products-tabs__option-text">Больше не нужно думать, войдет ли аппарат под вытяжку</div>
+							</div>
+							<div class="products-tabs__option">
+								<div class="products-tabs__option-title">барботер</div>
 								<div class="products-tabs__option-text">
-									для своевременного отбора голов и хвостов
+									Каждый аппарат снабжен съемным БАРБОТЕРОМ
 								</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									2 РЕЖИМА РАБОТЫ
-								</div>
-								<div class="products-tabs__option-text">
-									«Самогонный аппарат» и «Спиртовой»
-								</div>
+								<div class="products-tabs__option-title">Два разборных сухопарника</div>
+								<div class="products-tabs__option-text">Возможность установки любого количества сухопарников</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									ВЫСОКАЯ СТЕПЕНЬ ОЧИСТКИ
-								</div>
-								<div class="products-tabs__option-text">
-									очистка от сивушных масел на 100%
-								</div>
+								<div class="products-tabs__option-title">Работает на индукции</div>
+								<div class="products-tabs__option-text">100% прилегание дна к нагревающей поверхности</div>
 							</div>
 							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									УСИЛЕННЫЙ БАК
-								</div>
-								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
-								</div>
-							</div>
-							<div class="products-tabs__option">
-								<div class="products-tabs__option-title">
-									РАБОТАЕТ НА ИНДУКЦИИ
-								</div>
-								<div class="products-tabs__option-text">
-									подходит для всех типов плит
-								</div>
+								<div class="products-tabs__option-title">Объем</div>
+								<div class="products-tabs__option-text">ОТ 12 ДО 20 ЛИТРОВ</div>
 							</div>
 						</div>
 					</div>
@@ -510,16 +470,16 @@
 				</div>
 				<div class="unpacking-video-items">
 					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/DS10oEMHQrI" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/Q_9ZsU-DLBA" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/7sKSPMz_aU4" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="unpacking-video-item">
-						<iframe width="100%" height="250" src="https://www.youtube.com/embed/ggej-C82rI0" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="250" src="https://www.youtube.com/embed/3PcKo0nvKEw" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
