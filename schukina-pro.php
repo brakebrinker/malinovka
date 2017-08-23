@@ -27,7 +27,7 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#" class="more">Подробнее</a>
+										<a href="/kapitan.php" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
@@ -92,7 +92,6 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
-										<a href="#" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>
@@ -216,6 +215,7 @@
 										<input type="hidden" name="price" value="11900р">
 									</div>
 									<div class="form-buttons">
+										<a href="#" class="more">Подробнее</a>
 										<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 									</div>
 								</form>

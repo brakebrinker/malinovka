@@ -467,6 +467,15 @@ input[type="radio"]:checked + label > span > span {
     margin: 0;
     margin-bottom: 2px;
 }
+.choice-buy input[type="radio"]:checked + label > span > span {
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: inherit;
+    background-color: #fbb040;
+    margin: 0;
+    margin-bottom: 2px;
+}
 .form-buttons {
     display: flex;
     justify-content: space-between;

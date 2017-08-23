@@ -70,8 +70,8 @@
 		<form action="">
 			<span class="label">Объем</span>
 			<div class="choice-buy">
-				<input id="radio01" type="radio" name="volume" value="12"><label for="radio01"><span><span></span></span> 12л</label>
-				<input id="radio02" type="radio" name="volume" value="24"><label for="radio02"><span><span></span></span> 24л</label>
+				<input id="radio-out01" type="radio" name="volume" data-price="" value="12"><label for="radio-out01"><span><span></span></span> 12л</label>
+				<input id="radio-out02" type="radio" name="volume" data-price="" value="24"><label for="radio-out02"><span><span></span></span> 24л</label>
 				<span class="price">11900р</span>
 			</div>
 			<input type="text" name="name" id="name" placeholder="Ваше имя" required>

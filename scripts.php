@@ -71,5 +71,63 @@
 			}
 		});
 
+
+		setDataIntoForm();
+		//change price and form data
+		$('.form-choice input[type="radio"]').on('change', function() {
+			changePrice($(this), $(this).index());
+		});
+		$('.choice-buy input[type="radio"]').on('change', function() {
+			if ($(this).attr('checked')) {
+				$('.price').html($(this).attr('data-price') + 'р');
+				$('input[name="price"]').val($(this).attr('data-price') + 'р');
+			}
+		});
+		//tab click update data
+		$('.tab-link').on('click', function() {
+			setDataIntoForm();
+		});
+		$('.buy').on('click', function() {
+			setDataIntoForm();
+		});
+
+		function changePrice(thisElem, ind) {
+			var formBox;
+
+			formBox = $('.choice-buy > *').eq(ind)
+
+			formBox.attr('data-price', thisElem.attr('data-price'));
+			formBox.val(thisElem.val());
+
+			if (thisElem.attr('checked')) {
+				$('.price').html(thisElem.attr('data-price') + 'р');
+				$('input[name="price"]').val(thisElem.attr('data-price') + 'р');
+			}
+		}
+
+		function setDataIntoForm() {
+			var thisRadio = $('.products-tabs__items.current input[type="radio"]');
+			if (thisRadio.attr('checked')) {
+				$('.price').html(thisRadio.attr('data-price') + 'р');
+				$('input[name="price"]').val(thisRadio.attr('data-price') + 'р');
+			}
+
+			$('.form-header').html($('.tab-link.current span').html());
+
+			var currentRadio = $('.products-tabs__item.current .form-choice').find('input[type="radio"]');
+			var currentLabel = $('.products-tabs__item.current .form-choice').find('label');
+			var formRadio = $('.choice-buy').find('input[type="radio"]');
+			var formLabel = $('.choice-buy').find('label');
+
+			for (var i = 0; i < currentRadio.length; i++) {
+				if (currentRadio.eq(i).attr('checked')) {
+					formRadio.eq(i).attr('checked', 'true');
+				}
+				formRadio.eq(i).attr('data-price', currentRadio.eq(i).attr('data-price'));
+				formRadio.eq(i).val(currentRadio.eq(i).val());
+				formLabel.eq(i).html(currentLabel.eq(i).html());
+			}
+		}
+
     });
 </script>
