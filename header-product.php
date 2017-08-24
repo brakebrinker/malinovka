@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Russo+One&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Малиновка</title>
+	<title>Малиновка</title> 
 </head>
 <body>
 	<div class="page-wrapper product">
@@ -23,6 +24,10 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
+				<div class="header-container__info mobile">
+					<div class="header-container__info-phone"><a href="tel:834353456478">8 (3435) 345 64 78</a></div>
+					<div class="header-container__info-callback"><a href="#write-form" class="open-popup-link">Написать нам</a></div>
+				</div>
 			</section>
 			<section class="header product">
 				<div class="section-container">
@@ -38,7 +43,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="header-container__info">
+						<div class="header-container__info desktop">
 							<div class="header-container__info-phone"><a href="tel:834353456478">8 (3435) 345 64 78</a></div>
 							<div class="header-container__info-callback"><a href="#write-form" class="open-popup-link">Написать нам</a></div>
 						</div>

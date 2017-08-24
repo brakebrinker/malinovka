@@ -20,7 +20,7 @@
 								$dir_handle = @opendir($directory) or die("Ошибка при открытии папки !!!"); ?>
 						<div class="slider-self-container">
 							<div class="slider-self">
-								<?php
+								<?php /*
 									while ($file = readdir($dir_handle)) {
 										if($file=="." || $file == "..") continue;
 										$file_parts = explode(".",$file);
@@ -35,7 +35,12 @@
 
 									}
 									closedir($dir_handle);  //закрыть папку
-								?>
+								*/ ?>
+								<div class = "slider-self__item"><a href="/kapitan.php"><img src="img/slider/kapitan.png" alt="kapitan" /></a></div>
+								<div class = "slider-self__item"><a href="/schukina.php"><img src="img/slider/schukina.png" alt="schukina" /></a></div>
+								<div class = "slider-self__item"><a href="/schukina-pro.php"><img src="img/slider/schukina-pro.png" alt="schukina-pro" /></a></div>
+								<div class = "slider-self__item"><a href="/butleger.php"><img src="img/slider/butleger.png" alt="butleger" /></a></div>
+								<div class = "slider-self__item"><a href="/munshain.php"><img src="img/slider/munshajn.png" alt="munshajn" /></a></div>
 							</div>
 						</div>
 					</div>
@@ -165,15 +170,22 @@
 		</section>
 		<section class="products-tabs">
 			<div class="section-container">
-				<ul class="tabs">
+				<ul class="tabs desktop">
 					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
 					<li class="tab-link" data-tab="tab-2"><span>«Малиновка» щукина</span></li>
 					<li class="tab-link" data-tab="tab-3"><span>«Малиновка» щукина PRO</span></li>
 					<li class="tab-link" data-tab="tab-4"><span>«Малиновка» Бутлегер</span></li>
 					<li class="tab-link" data-tab="tab-5"><span>«Малиновка» муншайн</span></li>
 				</ul>
+				<ul class="tabs mobile">
+					<li class="tab-link current" data-tab="tab-1"><a href="/kapitan.php"><span>«Малиновка» капитан</span></a></li>
+					<li class="tab-link" data-tab="tab-2"><a href="/kapitan.php"><span>«Малиновка» щукина</span></a></li>
+					<li class="tab-link" data-tab="tab-3"><a href="/kapitan.php"><span>«Малиновка» щукина PRO</span></a></li>
+					<li class="tab-link" data-tab="tab-4"><a href="/kapitan.php"><span>«Малиновка» Бутлегер</span></a></li>
+					<li class="tab-link" data-tab="tab-5"><a href="/kapitan.php"><span>«Малиновка» муншайн</span></a></li>
+				</ul>
 			</div>
-			<div class="products-tabs__items">
+			<div class="products-tabs__items desktop">
 				<div class="section-container">
 					<div id="tab-1" class="tab-content current products-tabs__item">
 						<div class="products-tabs__item-left">
@@ -541,11 +553,13 @@
 					Закажите бесплатную консультацию
 				</div>
 				<div class="consultation-form__container">
-					<form action="">
+					<form method="POST" action="" class="form-send">
+						<input type="hidden" name="title" id="title" value="Закажите бесплатную консультацию">
 						<input type="text" name="name" id="name" placeholder="Ваше имя" required>
 						<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
 						<input type="submit" value="Заказать консультацию">
 					</form>
+					<div id="results"></div>
 				</div>
 			</div>
 		</section>

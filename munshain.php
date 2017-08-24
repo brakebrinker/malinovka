@@ -392,6 +392,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-1.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -400,6 +401,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-2.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -408,6 +410,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-3.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -416,6 +419,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-4.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -424,6 +428,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-5.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -432,6 +437,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-6.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -440,6 +446,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-7.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -448,6 +455,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-8.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -456,6 +464,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-9.jpg" alt=""></div>
 						</div>
+						<a href="#preparation-form" class="open-popup-link"></a>
 					</div>
 				</div>
 			</div>

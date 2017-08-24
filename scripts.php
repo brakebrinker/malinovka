@@ -39,15 +39,15 @@
 <script>
 	jQuery(document).ready(function($) {
 		$('.open-popup-link').magnificPopup({
-	      type:'inline',
-	      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-	    });
+		  type:'inline',
+		  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
 
-	    $('.popup-img').magnificPopup({
-	      type: 'image'
-	      // other options
-	    });
-    });
+		$('.popup-img').magnificPopup({
+		  type: 'image'
+		  // other options
+		});
+	});
 </script>
 <script>
 	jQuery(document).ready(function ($) {
@@ -116,7 +116,13 @@
 		}
 
 		function setDataIntoForm() {
-			$('.form-header').html($('.tab-link.current span').html());
+
+			$('.form-container form').fadeIn("fast");
+			$('.form-container .form-header').fadeIn("fast");
+
+			$('.form-header-product').html($('.tab-link.current span').html());
+			$('.product #title').val('Заказ ' + $('.tab-link.current span').html());
+			$('.product #price').val($('.product span.price').html());
 
 			var currentRadio = $('.products-tabs__item.current .form-choice').find('input[type="radio"]');
 			var currentLabel = $('.products-tabs__item.current .form-choice').find('label');
@@ -133,5 +139,31 @@
 			}
 		}
 
-    });
+	});
+</script>
+<script>
+	$(".form-send").submit(function() {
+		var msg = $(this).serialize();
+		$.ajax({
+		  type: 'POST',
+		  url: 'mail.php',
+		  data: msg,
+		  success: function(data) {
+			// $('#results').html(data);
+			// form-header
+			$('.form-container form').fadeOut("fast");
+			$('.form-container .form-header').fadeOut("fast");
+			$('#results').fadeIn("fast").text('Спасибо за ваш отзыв! Он появится в ближайшее время.');
+			// alert("Ваше сообщение отпрвлено!");
+			
+		  },
+		  error:  function(xhr, str) {
+		  	$('.form-container form').fadeOut("fast");
+		  	$('.form-container .form-header').fadeOut("fast");
+		  	$('#results').fadeIn("fast").text('Возникла ошибка: ' + xhr.responseCode);
+		  	// alert("Ошибка!");
+		  }
+		});
+		return false;
+	});
 </script>
