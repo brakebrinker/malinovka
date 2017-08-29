@@ -22,11 +22,11 @@
 		<section class="menu-section">
 			<nav class="section-container">
 				<ul>
-					<li><a href="#">Преимущества</a></li>
-					<li><a href="#">Каталог товаров</a></li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">Инструкция новичкам</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="/#benefits">Преимущества</a></li>
+					<li><a href="/#products-tabs">Каталог товаров</a></li>
+					<li><a href="/#delivery">Доставка и оплата</a></li>
+					<li><a href="/#preparation-stage">Инструкция новичкам</a></li>
+					<li><a href="/#unpacking">Обзор</a></li>
 				</ul>
 			</nav>
 		</section>

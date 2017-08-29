@@ -7,8 +7,8 @@ $c = true;
 if ( $method === 'POST' ) {
 
 	$project_name = "Malinovka";
-	$send_email  = "max.pevnev@gmail.com";
-	$admin_email  = "postmaster@malinovka.ru";
+	$send_email  = "zavod.malinovka@yandex.ru";
+	$admin_email  = "";
 	$form_subject = "Заявка c сайта Malinovka";
 
 	foreach ( $_POST as $key => $value ) {

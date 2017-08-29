@@ -56,6 +56,13 @@
 </script>
 <script>
 	jQuery(document).ready(function($) {
+
+		$('.open-popup-link').on('click', function() {
+			$('#results').fadeOut("fast");
+			$('.form-container form').fadeIn("fast");
+			$('.form-container .form-header').fadeIn("fast");
+		});
+
 		//position slider navigation
 
 		var ulWidth = $('.slick-dots').width() + 30;
@@ -76,8 +83,6 @@
 			}
 		});
 
-
-		setDataIntoForm();
 		//change price and form data
 		$('.form-choice input[type="radio"]').on('change', function() {
 			changePrice($(this), $(this).index());
@@ -100,6 +105,7 @@
 		$('.buy').on('click', function() {
 			setDataIntoForm();
 		});
+		setDataIntoForm();
 
 		function changePrice(thisElem, ind) {
 			var formBox;
@@ -122,7 +128,8 @@
 
 			$('.form-header-product').html($('.tab-link.current span').html());
 			$('.product #title').val('Заказ ' + $('.tab-link.current span').html());
-			$('.product #price').val($('.product span.price').html());
+			$('.product #price').val($('.tab-content.current .form-choice input:checked').attr('data-price') + 'р');
+			$('.choice-buy .price').html($('.products-tabs__item.current .form-choice input:checked').attr('data-price') + 'р');
 
 			var currentRadio = $('.products-tabs__item.current .form-choice').find('input[type="radio"]');
 			var currentLabel = $('.products-tabs__item.current .form-choice').find('label');
@@ -146,24 +153,70 @@
 		var msg = $(this).serialize();
 		$.ajax({
 		  type: 'POST',
-		  url: 'mail.php',
+		  url: '/mail.php',
 		  data: msg,
 		  success: function(data) {
 			// $('#results').html(data);
 			// form-header
 			$('.form-container form').fadeOut("fast");
 			$('.form-container .form-header').fadeOut("fast");
-			$('#results').fadeIn("fast").text('Спасибо за ваш отзыв! Он появится в ближайшее время.');
+			$('#results').fadeIn("fast").text('Спасибо за обращение, мы свяжемся с вами в течение рабочего дня!');
+			setTimeout(function() { 
+				$('#results').fadeOut("fast");
+				$('.form-container form').fadeIn("fast");
+				$('.form-container .form-header').fadeIn("fast");
+			}, 10000);
+			$.magnificPopup.open({
+			  items: {
+			    src: '.results-consult',
+			    type: 'inline',
+			    midClick: true,
+			    closeBtnInside:true,
+			  }
+			});
 			// alert("Ваше сообщение отпрвлено!");
-			
 		  },
 		  error:  function(xhr, str) {
 		  	$('.form-container form').fadeOut("fast");
 		  	$('.form-container .form-header').fadeOut("fast");
 		  	$('#results').fadeIn("fast").text('Возникла ошибка: ' + xhr.responseCode);
+		  	setTimeout(function() { 
+		  		$('#results').fadeOut("fast");
+		  		$('.form-container form').fadeIn("fast");
+		  		$('.form-container .form-header').fadeIn("fast");
+		  	}, 10000);
 		  	// alert("Ошибка!");
 		  }
 		});
 		return false;
 	});
 </script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45762531 = new Ya.Metrika({
+                    id:45762531,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45762531" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->

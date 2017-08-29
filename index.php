@@ -40,14 +40,14 @@
 								<div class = "slider-self__item"><a href="/schukina.php"><img src="img/slider/schukina.png" alt="schukina" /></a></div>
 								<div class = "slider-self__item"><a href="/schukina-pro.php"><img src="img/slider/schukina-pro.png" alt="schukina-pro" /></a></div>
 								<div class = "slider-self__item"><a href="/butleger.php"><img src="img/slider/butleger.png" alt="butleger" /></a></div>
-								<div class = "slider-self__item"><a href="/munshain.php"><img src="img/slider/munshajn.png" alt="munshajn" /></a></div>
+								<div class = "slider-self__item"><a href="/munshain.php"><img src="img/slider/munshain.png" alt="munshain" /></a></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</header>
-		<section class="benefits">
+		<section class="benefits" id="benefits">
 			<div class="section-container">
 				<div class="benefits-title">Самогон начинается с браги,<br> а винокур с выбора оборудования</div>
 				<hr>
@@ -86,7 +86,7 @@
 						<div class="benefits-item__img-no"><img src="img/ben-no-4.jpg" alt=""></div>
 						<div class="benefits-item__img-yes"><img src="img/ben-yes-4.jpg" alt=""></div>
 						<div class="benefits-item__descr">
-							<div class="benefits-item__descr-title">Надженость и
+							<div class="benefits-item__descr-title">Надежность и
 					безопасность</div>
 							<div class="benefits-item__descr-text">Соотвествует ГОСТам, подтверждено всеми необходимыми сертификатами соответствия.</div>
 						</div>
@@ -105,7 +105,7 @@
 						<div class="benefits-item__img-yes"><img src="img/ben-yes-6.jpg" alt=""></div>
 						<div class="benefits-item__descr">
 							<div class="benefits-item__descr-title">Позволяет готовить любые напитки</div>
-							<div class="benefits-item__descr-text">Соотвествует ГОСТам, подтверждено всеми необходимыми сертификатами соответствия.</div>
+							<div class="benefits-item__descr-text">Наслаждайтесь алкогольными напитками, без боли в голове на утро.</div>
 						</div>
 					</div>
 				</div>
@@ -115,14 +115,14 @@
 			<div class="section-container">
 				<div class="choice-left"><img src="img/drink-lf.png" alt=""></div>
 				<div class="choice-center">
-					<div class="choice-title">выбeрeте какой аппарат<br>подойдет именно вам</div>
-					<div class="choice-subtitle">ответье на несколько вопросов</div>
+					<div class="choice-title">выбирeте какой аппарат<br>подойдет именно вам</div>
+					<div class="choice-subtitle">ответьте на несколько вопросов</div>
 					<div class="choice-action"><a href="#podbor-form" class="open-popup-link">подобрать самогонный аппарат</a></div>
 				</div>
 				<div class="choice-right"><img src="img/drink-rt.png" alt=""></div>
 			</div>
 		</section>
-		<section class="preparation-stage">
+		<section class="preparation-stage" id="preparation-stage">
 			<div class="section-container">
 				<div class="preparation-stage-title">
 					стадии приготовления самогона<br>в домашних условиях
@@ -146,7 +146,7 @@
 							Спиртовое брожение – это процесс преобразования дрожжами сахара в этиловый спирт и углекислый газ. Готовность браги зависит от сырья и температуры, среднее время 
 							от 3 до 14 дней.
 							</div>
-							<div class="preparation-stage__item-link"><a href="#brozhenie-form" class="open-popup-link">узнать больше о сырье</a></div>
+							<div class="preparation-stage__item-link"><a href="#brozhenie-form" class="open-popup-link">получить рецепты</a></div>
 						</div>
 						<div class="preparation-stage__item">
 							<div class="preparation-stage__item-title">Перегонка и очистка самогона.
@@ -168,7 +168,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="products-tabs">
+		<section class="products-tabs" id="products-tabs">
 			<div class="section-container">
 				<ul class="tabs desktop">
 					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
@@ -177,12 +177,13 @@
 					<li class="tab-link" data-tab="tab-4"><span>«Малиновка» Бутлегер</span></li>
 					<li class="tab-link" data-tab="tab-5"><span>«Малиновка» муншайн</span></li>
 				</ul>
+				<div class="tabs-title mobile">каталог самогонных аппаратов</div>
 				<ul class="tabs mobile">
 					<li class="tab-link current" data-tab="tab-1"><a href="/kapitan.php"><span>«Малиновка» капитан</span></a></li>
-					<li class="tab-link" data-tab="tab-2"><a href="/kapitan.php"><span>«Малиновка» щукина</span></a></li>
-					<li class="tab-link" data-tab="tab-3"><a href="/kapitan.php"><span>«Малиновка» щукина PRO</span></a></li>
-					<li class="tab-link" data-tab="tab-4"><a href="/kapitan.php"><span>«Малиновка» Бутлегер</span></a></li>
-					<li class="tab-link" data-tab="tab-5"><a href="/kapitan.php"><span>«Малиновка» муншайн</span></a></li>
+					<li class="tab-link" data-tab="tab-2"><a href="/schukina.php"><span>«Малиновка» щукина</span></a></li>
+					<li class="tab-link" data-tab="tab-3"><a href="/schukina-pro.php"><span>«Малиновка» щукина PRO</span></a></li>
+					<li class="tab-link" data-tab="tab-4"><a href="/butleger.php"><span>«Малиновка» Бутлегер</span></a></li>
+					<li class="tab-link" data-tab="tab-5"><a href="/munshain.php"><span>«Малиновка» муншайн</span></a></li>
 				</ul>
 			</div>
 			<div class="products-tabs__items desktop">
@@ -239,7 +240,7 @@
 									УСИЛЕННЫЙ БАК
 								</div>
 								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
+									толщина стенок 1,5мм
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -259,10 +260,10 @@
 								<form action="#">
 									<span class="label">Объем</span>
 									<div class="form-choice">
-										<input id="radio03" type="radio" name="volume" data-price="6590" value="12" checked><label for="radio03"><span><span></span></span> 12л</label>
-										<input id="radio04" type="radio" name="volume" data-price="7590" value="20"><label for="radio04"><span><span></span></span> 20л</label>
-										<span class="price">6590р</span>
-										<input type="hidden" name="price" value="6590р">
+										<input id="radio03" type="radio" name="volume" data-price="7990" value="12" checked><label for="radio03"><span><span></span></span> 12л</label>
+										<input id="radio04" type="radio" name="volume" data-price="8990" value="20"><label for="radio04"><span><span></span></span> 20л</label>
+										<span class="price">7990р</span>
+										<input type="hidden" name="price" value="7990р">
 									</div>
 									<div class="form-buttons">
 										<a href="/schukina.php" class="more">Подробнее</a>
@@ -277,18 +278,18 @@
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
 								<div class="products-tabs__option-title">
-									ВСТРОЕННЫЙ ПОПУГАЙ
+									Широкая горловина 110мм
 								</div>
 								<div class="products-tabs__option-text">
-									для своевременного отбора голов и хвостов
+									упрощает заливку браги
 								</div>
 							</div>
 							<div class="products-tabs__option">
 								<div class="products-tabs__option-title">
-									2 РЕЖИМА РАБОТЫ
+									Надежность
 								</div>
 								<div class="products-tabs__option-text">
-									«Самогонный аппарат» и «Спиртовой»
+									конструкция проверенная временем
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -304,7 +305,7 @@
 									УСИЛЕННЫЙ БАК
 								</div>
 								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
+									толщина стенок 1,5мм
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -363,7 +364,7 @@
 									УСИЛЕННЫЙ БАК
 								</div>
 								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
+									толщина стенок 1,5мм
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -475,10 +476,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="unpacking">
+		<section class="unpacking" id="unpacking">
 			<div class="section-container">
 				<div class="unpacking-title">
-					распаковка самогонных<br>апаратов малиновка
+					распаковка самогонных<br>аппаратов малиновка
 				</div>
 				<div class="unpacking-video-items">
 					<div class="unpacking-video-item">
@@ -496,13 +497,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="delivery">
+		<section class="delivery" id="delivery">
 			<div class="section-container">
 				<div class="delivery-title">
-					бесплатная ДОСТАВКА ПО РОССИИ<br>с оплатой при получении
+					ДОСТАВКА ПО РОССИИ<br>с оплатой при получении
 				</div>
 				<div class="delivery-subtitle">
-					при заказе свышее <span>5000 рублей</span>
+					<!-- при заказе свышее <span>5000 рублей</span> -->
 				</div>
 				<div class="delivery-benefits">
 					<div class="delivery-benefits__item">
@@ -555,11 +556,13 @@
 				<div class="consultation-form__container">
 					<form method="POST" action="" class="form-send">
 						<input type="hidden" name="title" id="title" value="Закажите бесплатную консультацию">
-						<input type="text" name="name" id="name" placeholder="Ваше имя" required>
-						<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+						<input type="text" name="name" id="name" placeholder="Ваше имя">
+						<input type="text" name="phone" id="phone" placeholder="Ваш телефон" required>
 						<input type="submit" value="Заказать консультацию">
 					</form>
-					<div id="results"></div>
+					<div class="results-consult">
+						<div id="results"></div>
+					</div>
 				</div>
 			</div>
 		</section>

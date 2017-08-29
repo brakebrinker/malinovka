@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=350, initial-scale=1, maximum-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Russo+One&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Малиновка</title>
+	<title>Самогонные аппараты Малиновка</title>
 </head>
 <body>
 	<div class="page-wrapper">
@@ -17,11 +17,11 @@
 			<section class="menu-section">
 				<nav class="section-container">
 					<ul>
-						<li><a href="#">Преимущества</a></li>
-						<li><a href="#">Каталог товаров</a></li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">Инструкция новичкам</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="/#benefits">Преимущества</a></li>
+						<li><a href="/#products-tabs">Каталог товаров</a></li>
+						<li><a href="/#delivery">Доставка и оплата</a></li>
+						<li><a href="/#preparation-stage">Инструкция новичкам</a></li>
+						<li><a href="/#unpacking">Обзор</a></li>
 					</ul>
 				</nav>
 				<div class="header-container__info mobile">

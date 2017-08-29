@@ -1,15 +1,65 @@
-<?php require_once 'header-product.php'; ?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=350, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Russo+One&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Малиновка Капитан</title> 
+</head>
+<body>
+	<div class="page-wrapper product">
+		<header>
+			<section class="menu-section">
+				<nav class="section-container">
+					<ul>
+						<li><a href="/#benefits">Преимущества</a></li>
+						<li><a href="/#products-tabs">Каталог товаров</a></li>
+						<li><a href="/#delivery">Доставка и оплата</a></li>
+						<li><a href="/#preparation-stage">Инструкция новичкам</a></li>
+						<li><a href="/#unpacking">Обзор</a></li>
+					</ul>
+				</nav>
+				<div class="header-container__info mobile">
+					<div class="header-container__info-phone"><a href="tel:834353456478">8 (3435) 345 64 78</a></div>
+					<div class="header-container__info-callback"><a href="#write-form" class="open-popup-link">Написать нам</a></div>
+				</div>
+			</section>
+			<section class="header product">
+				<div class="section-container">
+					<div class="header-container">
+						<div class="header-container__logo">
+							<a href="/">
+								<div class="header-container__logo-img">
+									<img src="img/logo.png" alt="Логотип">
+								</div>
+								<div class="header-container__logo-descr">
+									<div class="site-name">Самогонные аппараты «Малиновка»</div>
+									<div class="site-subname">официальный дилер УТПЗ</div>
+								</div>
+							</a>
+						</div>
+						<div class="header-container__info desktop">
+							<div class="header-container__info-phone"><a href="tel:834353456478">8 (3435) 345 64 78</a></div>
+							<div class="header-container__info-callback"><a href="#write-form" class="open-popup-link">Написать нам</a></div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</header>
 		<section class="products-tabs">
 			<div class="section-container">
+				<div class="catalog-pr mobile"><a href="/#products-tabs">Каталог товаров</a></div>
 				<ul class="tabs">
 					<li class="tab-link current" data-tab="tab-1"><span>«Малиновка» капитан</span></li>
-					<li class="tab-link" data-tab="tab-2"><span>«Малиновка» щукина</span></li>
-					<li class="tab-link" data-tab="tab-3"><span>«Малиновка» щукина PRO</span></li>
-					<li class="tab-link" data-tab="tab-4"><span>«Малиновка» Бутлегер</span></li>
-					<li class="tab-link" data-tab="tab-5"><span>«Малиновка» муншайн</span></li>
+					<li class="tab-link" data-tab="tab-2"><a href="/schukina.php"><span>«Малиновка» щукина</span></a></li>
+					<li class="tab-link" data-tab="tab-3"><a href="/schukina-pro.php"><span>«Малиновка» щукина PRO</span></a></li>
+					<li class="tab-link" data-tab="tab-4"><a href="/butleger.php"><span>«Малиновка» Бутлегер</span></a></li>
+					<li class="tab-link" data-tab="tab-5"><a href="/munshain.php"><span>«Малиновка» муншайн</span></a></li>
 				</ul>
 			</div>
 			<div class="products-tabs__items">
@@ -65,7 +115,7 @@
 									УСИЛЕННЫЙ БАК
 								</div>
 								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
+									толщина стенок 1,5мм
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -85,10 +135,10 @@
 								<form action="#">
 									<span class="label">Объем</span>
 									<div class="form-choice">
-										<input id="radio03" type="radio" name="volume" data-price="6590" value="12" checked><label for="radio03"><span><span></span></span> 12л</label>
-										<input id="radio04" type="radio" name="volume" data-price="7590" value="20"><label for="radio04"><span><span></span></span> 20л</label>
-										<span class="price">6590р</span>
-										<input type="hidden" name="price" value="6590р">
+										<input id="radio03" type="radio" name="volume" data-price="7990" value="12" checked><label for="radio03"><span><span></span></span> 12л</label>
+										<input id="radio04" type="radio" name="volume" data-price="8990" value="20"><label for="radio04"><span><span></span></span> 20л</label>
+										<span class="price">7990р</span>
+										<input type="hidden" name="price" value="7990р">
 									</div>
 									<div class="form-buttons">
 										<a href="/schukina.php" class="more">Подробнее</a>
@@ -103,18 +153,18 @@
 						<div class="products-tabs__item-right">
 							<div class="products-tabs__option">
 								<div class="products-tabs__option-title">
-									ВСТРОЕННЫЙ ПОПУГАЙ
+									Широкая горловина 110мм
 								</div>
 								<div class="products-tabs__option-text">
-									для своевременного отбора голов и хвостов
+									упрощает заливку браги
 								</div>
 							</div>
 							<div class="products-tabs__option">
 								<div class="products-tabs__option-title">
-									2 РЕЖИМА РАБОТЫ
+									Надежность
 								</div>
 								<div class="products-tabs__option-text">
-									«Самогонный аппарат» и «Спиртовой»
+									конструкция проверенная временем
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -130,7 +180,7 @@
 									УСИЛЕННЫЙ БАК
 								</div>
 								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
+									толщина стенок 1,5мм
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -189,7 +239,7 @@
 									УСИЛЕННЫЙ БАК
 								</div>
 								<div class="products-tabs__option-text">
-									толщина стенок 1,5мм, дно толщиной 2мм
+									толщина стенок 1,5мм
 								</div>
 							</div>
 							<div class="products-tabs__option">
@@ -309,49 +359,168 @@
 				<div class="characteristics__container">
 					<div class="characteristics__slider">
 						<div class="characteristics__slider-item">
-							<div class="characteristics__slider-img" style="background: url(../img/pr-char-1.jpg) no-repeat 0 0">
+							<div class="characteristics__slider-img" style="background: url(../img/options/1k.jpg) no-repeat 0 0">
 							</div>
 							<div class="characteristics__slider-content">
 								<div class="characteristics__slider-title">
-									Встроенный попугай
+									Устройство измерения крепости
 								</div>
 								<div class="characterictics__slider-text">
-									(УСТРОЙСТВО ИЗМЕРЕНИЯ КРЕПОСТИ)- это полный контроль крепости выгоняемого напитка прямо в режиме пергонки, теперь не придется мучиться и тратить время на постоянный перелив из маленькой емкости в большую.
+									Устройство измерения крепости называют "попугай"- это полноценный контроль крепости ,выгон напитка прямо в режиме перегонки. И вам не придется мучиться каждый раз переливать из маленькой емкости в большую. Работа с измерителем проста - вы просто опускаете спиртомер в данное устройство и постоянно видите с какой крепостью
+									выходит ваш продукт.
 								</div>
 								<div class="characterictics__slider-buttons">
-									<a href="#consultation" class="more">Получить консультацию</a>
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
 									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 								</div>
 							</div>
 						</div>
 						<div class="characteristics__slider-item">
-							<div class="characteristics__slider-img" style="background: url(../img/pr-char-2.jpg) no-repeat 0 0">
+							<div class="characteristics__slider-img" style="background: url(../img/options/2k.jpg) no-repeat 0 0">
 							</div>
 							<div class="characteristics__slider-content">
 								<div class="characteristics__slider-title">
 									Сливной кран
 								</div>
 								<div class="characterictics__slider-text">
-									-на баке у «МАЛИНОВКИ» Капитан снизу установлен сливной кран со штуцером под шланг, что значительно упрощает слив оставшейся после перегонки горячей браги. Вам больше не придется ждать, когда остынет брага. Особенно актуально, если перегонять большой объем.
+									На баке у «Малиновка» Капитан снизу установлен сливной кран со штуцером под шланг, который упростит слив оставшейся после перегонки горячей браги. Вам не придется долго ждать, когда остынет брага.
 								</div>
 								<div class="characterictics__slider-buttons">
-									<a href="#consultation" class="more">Получить консультацию</a>
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
 									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 								</div>
 							</div>
 						</div>
 						<div class="characteristics__slider-item">
-							<div class="characteristics__slider-img" style="background: url(../img/pr-char-3.jpg) no-repeat 0 0">
+							<div class="characteristics__slider-img" style="background: url(../img/options/3k.jpg) no-repeat 0 0">
 							</div>
 							<div class="characteristics__slider-content">
 								<div class="characteristics__slider-title">
-									Материал
+									БОЛЬШАЯ ПРОИЗВОДИТЕЛЬНОСТЬ
 								</div>
 								<div class="characterictics__slider-text">
-									Пищевая нержавеющая сталь толщиной 1,5 мм марки AISI 304, используемая при изготовлении самогонного аппарата гигиенична, гипоаллергенна и не взаимодействует с жидкостью внутри куба в отличие от многих представленных на рынке аппаратов.
+									Большой диаметр трубок не позволит засориться им, 
+									и обеспечит максимальную производительность до 4 л/ч.
 								</div>
 								<div class="characterictics__slider-buttons">
-									<a href="#consultation" class="more">Получить консультацию</a>
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/options/4k.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									ДВА ТЕРМОМЕТРА
+								</div>
+								<div class="characterictics__slider-text">
+									Полноценный контроль температурного режима. На баке установлен аналоговый термометр , а на колонне установлен высокоточный электронный термометр, с помощью которого вы сможете изготовить напиток по любому рецепту.
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/options/5k.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									ВНЕШНИЙ ВИД
+								</div>
+								<div class="characterictics__slider-text">
+									Аппарат изготовлен на полностью автоматическом - роботизированном оборудовании.
+									Качество сварных швов на высоте. 
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/options/6k.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									ДЕРЕВЯННЫЕ РУЧКИ
+								</div>
+								<div class="characterictics__slider-text">
+									Обеспечивают безопасность при эксплуатации, 
+									а также подчеркивают эстетический вид. 
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/options/7k.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									2 РЕЖИМА РАБОТЫ
+								</div>
+								<div class="characterictics__slider-text">
+									Два винта регулировки крепости – с помощью них  регулируется подача воды в дефлегматор. 
+									Тем самым «МАЛИНОВКУ» Капитан можно использовать в 2 режимах:<br>
+									- Самогонный аппарат<br>
+									- Спиртовой<br>
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/options/8k.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									ГЕЛИКОИДАЛЬНАЯ ЗАКРУЧЕННАЯ ПРОВОЛКА
+								</div>
+								<div class="characterictics__slider-text">
+									Здесь происходит конденсация паров и образуется флегма – смесь дистиллята и тяжелых фракций, которая под действием силы тяжести стекает по геликоидально закрученной проволоке вниз, навстречу поднимающимся парам и нагревается ещё раз. Из нагретой флегмы происходит испарение очищенного дистиллята. Геликоидально закрученная проволока замедляет скорость стекающей флегмы и увеличивает расстояние, которая флегма проходит внутри вертикальной колонны. 
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/options/9k.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									ОЧИСТКА ОТ СИВУШНЫХ МАСЕЛ – 100%
+								</div>
+								<div class="characterictics__slider-text">
+									Очистка продукта происходит в дефлегматоре, за счет охлаждения дефлегматора, происходит конденсация сивушных масел и других вредных примесей (флегмы), которая затем стекает обратно в бак. Вам больше не нужно будет сливать сивуху из сухопарника, так как эту задачу за вас сделает автоматически самогонный аппарат «МАЛИНОВКА» Капитан.
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
+									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
+								</div>
+							</div>
+						</div>
+						<div class="characteristics__slider-item">
+							<div class="characteristics__slider-img" style="background: url(../img/options/10k.jpg) no-repeat 0 0">
+							</div>
+							<div class="characteristics__slider-content">
+								<div class="characteristics__slider-title">
+									ШИРОКАЯ ГОРЛОВИНА
+								</div>
+								<div class="characterictics__slider-text">
+									110 ММ по настоящему широкая горловина (110 мм), упрощает заливку сырья и последующею чистку бака. 
+								</div>
+								<div class="characterictics__slider-buttons">
+									<a href="#write-form" class="open-popup-link more">Получить консультацию</a>
 									<a href="#product-order-form-kapitan" class="buy open-popup-link">Купить</a>
 								</div>
 							</div>
@@ -368,7 +537,7 @@
 					<div class="how-work__content">
 						<div class="how-work__content-radio">
 							<input id="how-work-radio01" type="radio" name="volume" checked value="Винты дефлегматора закрыты. Дефлегматор отключен. Аппарат работает в обычном режиме."><label for="how-work-radio01"><span><span></span></span> Самогонный аппарат</label>
-							<input id="how-work-radio02" type="radio" name="volume" value="Как-то работает"><label for="how-work-radio02"><span><span></span></span> Спиртовой</label>
+							<input id="how-work-radio02" type="radio" name="volume" value="Винты дефлегматора открыты. Вода начинает поступать в дефлегматор, охлаждая его, и конденсируя сивушные масла, которые стекают по геликоидальной проволоке обратно в бак. Идет укрепление конечного продукта. При переключении аппарат не должен перемещаться."><label for="how-work-radio02"><span><span></span></span> Спиртовой</label>
 						</div>
 						<div class="how-work__content-text">Винты дефлегматора закрыты. Дефлегматор отключен. Аппарат работает в обычном режиме.</div>
 					</div>
@@ -407,7 +576,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-1.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -416,7 +585,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-2.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -425,7 +594,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-3.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -434,7 +603,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-4.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -443,7 +612,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-5.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -452,7 +621,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-6.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -461,7 +630,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-7.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -470,7 +639,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-8.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 					<div class="beverages-item">
 						<div class="beverages-item__container">
@@ -479,7 +648,7 @@
 							</div>
 							<div class="beverages-item__img"><img src="img/bev-9.jpg" alt=""></div>
 						</div>
-						<a href="#preparation-form" class="open-popup-link"></a>
+						<a href="#recept-form" class="open-popup-link"></a>
 					</div>
 				</div>
 			</div>
@@ -494,10 +663,10 @@
 		<section class="delivery">
 			<div class="section-container">
 				<div class="delivery-title">
-					бесплатная ДОСТАВКА ПО РОССИИ<br>с оплатой при получении
+					ДОСТАВКА ПО РОССИИ<br>с оплатой при получении
 				</div>
 				<div class="delivery-subtitle">
-					при заказе свышее <span>5000 рублей</span>
+					<!-- при заказе свышее <span>5000 рублей</span> -->
 				</div>
 				<div class="delivery-benefits">
 					<div class="delivery-benefits__item">
@@ -542,17 +711,21 @@
 				</div>
 			</div>
 		</section>
-		<section id="consultation" class="consultation">
+		<section class="consultation">
 			<div class="section-container">
 				<div class="consultation-title">
 					Закажите бесплатную консультацию
 				</div>
 				<div class="consultation-form__container">
-					<form action="">
-						<input type="text" name="name" id="name" placeholder="Ваше имя" required>
-						<input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+					<form method="POST" action="" class="form-send">
+						<input type="hidden" name="title" id="title" value="Закажите бесплатную консультацию">
+						<input type="text" name="name" id="name" placeholder="Ваше имя">
+						<input type="text" name="phone" id="phone" placeholder="Ваш телефон" required>
 						<input type="submit" value="Заказать консультацию">
 					</form>
+					<div class="results-consult">
+						<div id="results"></div>
+					</div>
 				</div>
 			</div>
 		</section>
