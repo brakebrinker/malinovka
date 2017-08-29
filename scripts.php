@@ -151,6 +151,8 @@
 <script>
 	$(".form-send").submit(function() {
 		var msg = $(this).serialize();
+		var resCons = $(this).parent('.consultation-form__container').find('.results-consult');
+
 		$.ajax({
 		  type: 'POST',
 		  url: '/mail.php',
@@ -160,20 +162,26 @@
 			// form-header
 			$('.form-container form').fadeOut("fast");
 			$('.form-container .form-header').fadeOut("fast");
-			$('#results').fadeIn("fast").text('Спасибо за обращение, мы свяжемся с вами в течение рабочего дня!');
-			setTimeout(function() { 
-				$('#results').fadeOut("fast");
-				$('.form-container form').fadeIn("fast");
-				$('.form-container .form-header').fadeIn("fast");
-			}, 10000);
-			$.magnificPopup.open({
-			  items: {
-			    src: '.results-consult',
-			    type: 'inline',
-			    midClick: true,
-			    closeBtnInside:true,
-			  }
-			});
+
+			console.log(resCons);
+			if(resCons.length > 0) {
+				$('#results').fadeIn("fast").text('Спасибо за обращение, мы свяжемся с вами в течение рабочего дня!');
+				$.magnificPopup.open({
+				  items: {
+				    src: '.results-consult',
+				    type: 'inline',
+				    midClick: true,
+				    closeBtnInside:true,
+				  }
+				});
+			} else {
+				$('#results').fadeIn("fast").text('Спасибо за обращение, мы свяжемся с вами в течение рабочего дня!');
+				setTimeout(function() { 
+					$('#results').fadeOut("fast");
+					$('.form-container form').fadeIn("fast");
+					$('.form-container .form-header').fadeIn("fast");
+				}, 10000);
+			}
 			// alert("Ваше сообщение отпрвлено!");
 		  },
 		  error:  function(xhr, str) {

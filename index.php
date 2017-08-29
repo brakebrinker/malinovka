@@ -115,7 +115,7 @@
 			<div class="section-container">
 				<div class="choice-left"><img src="img/drink-lf.png" alt=""></div>
 				<div class="choice-center">
-					<div class="choice-title">выбирeте какой аппарат<br>подойдет именно вам</div>
+					<div class="choice-title">выберите какой аппарат<br>подойдет именно вам</div>
 					<div class="choice-subtitle">ответьте на несколько вопросов</div>
 					<div class="choice-action"><a href="#podbor-form" class="open-popup-link">подобрать самогонный аппарат</a></div>
 				</div>

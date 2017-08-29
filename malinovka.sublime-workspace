@@ -937,8 +937,8 @@
 						"selection":
 						[
 							[
-								561,
-								561
+								573,
+								573
 							]
 						],
 						"settings":
@@ -948,30 +948,20 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										561,
-										565
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										34,
-										38
-									]
 								},
 								"unmatched":
 								{
+									"1":
+									[
+										568,
+										572
+									]
 								}
 							},
 							"bracket_highlighter.regions":

@@ -8,6 +8,7 @@ if ( $method === 'POST' ) {
 
 	$project_name = "Malinovka";
 	$send_email  = "zavod.malinovka@yandex.ru";
+	// $send_email  = "max.pevnev@gmail.com";
 	$admin_email  = "";
 	$form_subject = "Заявка c сайта Malinovka";
 
